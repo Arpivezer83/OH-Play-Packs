@@ -1,0 +1,37 @@
+name: Validate OH Play community packs
+
+on:
+  pull_request:
+    paths:
+      - 'packs/game-cards/**'
+      - 'schema/**'
+      - 'scripts/community-pack-*.mjs'
+      - 'scripts/validate-community-pack.mjs'
+      - 'scripts/validate-community-packs.mjs'
+      - 'scripts/validate-changed-community-packs.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate submitted packs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Validate changed submitted packs
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          git diff --name-status "$BASE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/oh-play-pack-changes.txt"
+          node scripts/validate-changed-community-packs.mjs "$RUNNER_TEMP/oh-play-pack-changes.txt"

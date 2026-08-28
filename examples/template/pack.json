@@ -1,0 +1,133 @@
+{
+  "id": "template-forest-animals",
+  "schemaVersion": 1,
+  "packType": "game-cards-world",
+  "version": "0.1.0",
+  "title": {
+    "en": "Forest Animals template",
+    "hu": "Erdei állatok minta"
+  },
+  "description": {
+    "en": "A deliberately tiny example of an OH Play Game Cards world. Replace every illustrative value before submitting a real pack.",
+    "hu": "Szándékosan apró példa egy OH Play Game Cards világra. Valódi csomag beküldése előtt minden szemléltető értéket cserélj le."
+  },
+  "contributors": [
+    {
+      "name": "Example contributor",
+      "roles": ["creator", "researcher", "translator", "illustrator"]
+    }
+  ],
+  "languages": ["en", "hu"],
+  "rights": {
+    "contentLicense": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "includesThirdPartyAssets": false
+  },
+  "compatibility": {
+    "gameCardsEngine": 1
+  },
+  "capabilities": ["battle"],
+  "content": {
+    "world": {
+      "id": "template-forest-animals",
+      "title": {
+        "en": "Forest Animals",
+        "hu": "Erdei állatok"
+      },
+      "description": {
+        "en": "Illustrative cards about a familiar forest animal.",
+        "hu": "Szemléltető kártyák egy ismert erdei állatról."
+      },
+      "cardOrder": ["red-fox"],
+      "stats": [
+        {
+          "key": "adult-mass-kg",
+          "label": { "en": "Adult mass", "hu": "Kifejlett testtömeg" },
+          "unit": { "en": "kg", "hu": "kg" },
+          "direction": "higher-wins",
+          "display": { "kind": "approximate-number", "maximumFractionDigits": 1 }
+        },
+        {
+          "key": "top-speed-kph",
+          "label": { "en": "Top land speed", "hu": "Legnagyobb szárazföldi sebesség" },
+          "unit": { "en": "km/h", "hu": "km/h" },
+          "direction": "higher-wins",
+          "display": { "kind": "approximate-number", "maximumFractionDigits": 0 }
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "red-fox",
+        "name": {
+          "display": { "en": "Red fox", "hu": "Vörös róka" },
+          "secondaryName": "Vulpes vulpes"
+        },
+        "summary": {
+          "en": "Replace this illustrative fact with carefully checked, source-backed content.",
+          "hu": "Cseréld le ezt a szemléltető tényt gondosan ellenőrzött, forrással alátámasztott tartalomra."
+        },
+        "facts": [
+          {
+            "key": "habitat",
+            "label": { "en": "Habitat", "hu": "Élőhely" },
+            "value": { "en": "Example field", "hu": "Példa mező" }
+          }
+        ],
+        "stats": {
+          "adult-mass-kg": {
+            "value": 6,
+            "reportedRange": { "min": 3.6, "max": 8.2 },
+            "basis": {
+              "en": "Illustrative adult reference only; use a real source and explain the selected comparison value.",
+              "hu": "Csak szemléltető kifejlett referencia; használj valódi forrást, és magyarázd el a kiválasztott összehasonlítási értéket."
+            }
+          },
+          "top-speed-kph": {
+            "value": 50,
+            "basis": {
+              "en": "Illustrative short-sprint reference only; replace it with a sourced value.",
+              "hu": "Csak szemléltető rövid sprintérték; cseréld le forrásolt értékre."
+            }
+          }
+        },
+        "image": {
+          "path": "assets/red-fox-template.svg",
+          "alt": {
+            "en": "An abstract orange fox illustration marked as a template asset",
+            "hu": "Szemléltető eszközként jelölt, absztrakt narancssárga rókaillusztráció"
+          },
+          "attribution": {
+            "origin": "original",
+            "creator": "OH Play community pack template",
+            "license": {
+              "id": "CC-BY-4.0",
+              "name": "Creative Commons Attribution 4.0 International",
+              "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "modifications": []
+          }
+        },
+        "sources": [
+          {
+            "id": "replace-with-authoritative-source",
+            "label": "Replace with an authoritative source before submission",
+            "url": "https://example.com/replace-me",
+            "accessedAt": "2026-08-27",
+            "fields": [
+              "name.secondaryName",
+              "summary",
+              "facts.habitat",
+              "stats.adult-mass-kg",
+              "stats.top-speed-kph"
+            ],
+            "note": "This placeholder proves the field-path shape only. It is not a real source."
+          }
+        ]
+      }
+    ]
+  }
+}

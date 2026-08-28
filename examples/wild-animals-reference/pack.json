@@ -1,0 +1,272 @@
+{
+  "id": "wild-animals-reference",
+  "schemaVersion": 1,
+  "packType": "game-cards-world",
+  "version": "1.0.0",
+  "title": {
+    "en": "Wild Animals reference pack",
+    "hu": "Vadon élő állatok referencia csomag"
+  },
+  "description": {
+    "en": "A self-contained reference pack derived from four canonical OH Play Wild Animals cards. It proves the C1 format and C2 validator; it is not in the production catalogue.",
+    "hu": "Négy kanonikus OH Play Vadon élő állatok kártyából készült, önálló referencia csomag. A C1 formátumot és a C2 validátort igazolja; nem része az éles katalógusnak."
+  },
+  "contributors": [
+    {
+      "name": "OnlyHuman / OH Play reference pack",
+      "roles": ["creator", "researcher", "translator", "illustrator"]
+    }
+  ],
+  "languages": ["en", "hu"],
+  "rights": {
+    "contentLicense": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "includesThirdPartyAssets": false
+  },
+  "compatibility": {
+    "gameCardsEngine": 1
+  },
+  "capabilities": ["battle", "recognition"],
+  "content": {
+    "world": {
+      "id": "wild-animals-reference",
+      "title": { "en": "Wild Animals", "hu": "Vadon élő állatok" },
+      "description": {
+        "en": "Four source-backed Wild Animals cards for validator reference only.",
+        "hu": "Négy forrásolt Vadon élő állatok kártya kizárólag validátor-referenciának."
+      },
+      "cardOrder": ["african-elephant", "cheetah", "american-bison", "gray-wolf"],
+      "stats": [
+        {
+          "key": "adult-mass-kg",
+          "label": { "en": "Adult mass", "hu": "Kifejlett testtömeg" },
+          "unit": { "en": "kg", "hu": "kg" },
+          "direction": "higher-wins",
+          "display": { "kind": "approximate-number", "maximumFractionDigits": 0 }
+        },
+        {
+          "key": "shoulder-height-m",
+          "label": { "en": "Shoulder height", "hu": "Marmagasság" },
+          "unit": { "en": "m", "hu": "m" },
+          "direction": "higher-wins",
+          "display": { "kind": "approximate-number", "maximumFractionDigits": 2 }
+        },
+        {
+          "key": "top-land-speed-kph",
+          "label": { "en": "Top land speed", "hu": "Legnagyobb szárazföldi sebesség" },
+          "unit": { "en": "km/h", "hu": "km/h" },
+          "direction": "higher-wins",
+          "display": { "kind": "approximate-number", "maximumFractionDigits": 0 }
+        }
+      ]
+    },
+    "cards": [
+      {
+        "id": "african-elephant",
+        "name": {
+          "display": { "en": "African elephant", "hu": "Afrikai elefánt" },
+          "secondaryName": "Loxodonta africana"
+        },
+        "summary": {
+          "en": "Its trunk can pick up small objects as well as reach leaves and draw water.",
+          "hu": "Az ormánya apró tárgyakat is fel tud venni, levelet ér el vele, és vizet is szív fel."
+        },
+        "facts": [
+          {
+            "key": "primary-habitat",
+            "label": { "en": "Primary habitat", "hu": "Elsődleges élőhely" },
+            "value": { "en": "Savanna and woodland", "hu": "Szavanna és ligetes erdő" }
+          }
+        ],
+        "stats": {
+          "adult-mass-kg": { "value": 2800, "reportedRange": { "min": 2000, "max": 3500 } },
+          "shoulder-height-m": { "value": 2.6, "reportedRange": { "min": 2.2, "max": 2.6 } },
+          "top-land-speed-kph": { "value": 24, "reportedRange": { "min": 24, "max": 25 } }
+        },
+        "image": {
+          "path": "assets/african-elephant.svg",
+          "alt": { "en": "Reference illustration of an African elephant", "hu": "Afrikai elefánt referenciaillusztrációja" },
+          "attribution": {
+            "origin": "original",
+            "creator": "OH Play community pack reference illustration",
+            "license": { "id": "CC-BY-4.0", "name": "Creative Commons Attribution 4.0 International", "url": "https://creativecommons.org/licenses/by/4.0/" },
+            "modifications": []
+          }
+        },
+        "sources": [
+          {
+            "id": "san-diego-elephant",
+            "label": "San Diego Zoo Wildlife Alliance — Elephant",
+            "url": "https://animals.sandiegozoo.org/animals/elephant",
+            "accessedAt": "2026-08-25",
+            "fields": ["summary", "facts.primary-habitat"]
+          },
+          {
+            "id": "animal-diversity-elephant",
+            "label": "Animal Diversity Web — Loxodonta africana",
+            "url": "https://animaldiversity.org/accounts/Loxodonta_africana/",
+            "accessedAt": "2026-08-25",
+            "fields": ["name.secondaryName", "stats.adult-mass-kg", "stats.shoulder-height-m", "stats.top-land-speed-kph"]
+          }
+        ]
+      },
+      {
+        "id": "cheetah",
+        "name": {
+          "display": { "en": "Cheetah", "hu": "Gepárd" },
+          "secondaryName": "Acinonyx jubatus"
+        },
+        "summary": {
+          "en": "Its long legs, flexible spine and grippy claws help it make very short, fast chases.",
+          "hu": "Hosszú lábai, rugalmas gerince és kapaszkodó karmai nagyon rövid, gyors üldözésekben segítik."
+        },
+        "facts": [
+          {
+            "key": "primary-habitat",
+            "label": { "en": "Primary habitat", "hu": "Elsődleges élőhely" },
+            "value": { "en": "Open grassland and plains", "hu": "Nyílt füves terület és síkság" }
+          }
+        ],
+        "stats": {
+          "adult-mass-kg": { "value": 38, "reportedRange": { "min": 34, "max": 64 } },
+          "shoulder-height-m": { "value": 0.7, "reportedRange": { "min": 0.68, "max": 0.77 } },
+          "top-land-speed-kph": { "value": 110, "reportedRange": { "min": 96, "max": 112 } }
+        },
+        "image": {
+          "path": "assets/cheetah.svg",
+          "alt": { "en": "Reference illustration of a cheetah", "hu": "Gepárd referenciaillusztrációja" },
+          "attribution": {
+            "origin": "original",
+            "creator": "OH Play community pack reference illustration",
+            "license": { "id": "CC-BY-4.0", "name": "Creative Commons Attribution 4.0 International", "url": "https://creativecommons.org/licenses/by/4.0/" },
+            "modifications": []
+          }
+        },
+        "sources": [
+          {
+            "id": "smithsonian-cheetah",
+            "label": "Smithsonian’s National Zoo — Cheetah",
+            "url": "https://nationalzoo.si.edu/animals/cheetah",
+            "accessedAt": "2026-08-25",
+            "fields": ["name.secondaryName", "summary", "facts.primary-habitat", "stats.adult-mass-kg", "stats.top-land-speed-kph"]
+          },
+          {
+            "id": "cheetah-morphometrics",
+            "label": "Peer-reviewed cheetah morphometrics — adult mass and shoulder height",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5674840/",
+            "accessedAt": "2026-08-25",
+            "fields": ["stats.shoulder-height-m"]
+          }
+        ]
+      },
+      {
+        "id": "american-bison",
+        "name": {
+          "display": { "en": "American bison", "hu": "Amerikai bölény" },
+          "secondaryName": "Bison bison"
+        },
+        "summary": {
+          "en": "Its powerful shoulder and neck muscles help it swing its head to clear snow and reach winter plants.",
+          "hu": "Erős váll- és nyakizmai segítenek oldalra lendíteni a fejét, hogy a hó alól téli növényeket érjen el."
+        },
+        "facts": [
+          {
+            "key": "primary-habitat",
+            "label": { "en": "Primary habitat", "hu": "Elsődleges élőhely" },
+            "value": { "en": "Grasslands and prairies", "hu": "Füves puszták és préri" }
+          }
+        ],
+        "stats": {
+          "adult-mass-kg": { "value": 450, "reportedRange": { "min": 363, "max": 454 } },
+          "shoulder-height-m": { "value": 1.5, "reportedRange": { "min": 1.37, "max": 1.68 } },
+          "top-land-speed-kph": { "value": 55, "reportedRange": { "min": 55, "max": 65 } }
+        },
+        "image": {
+          "path": "assets/american-bison.svg",
+          "alt": { "en": "Reference illustration of an American bison", "hu": "Amerikai bölény referenciaillusztrációja" },
+          "attribution": {
+            "origin": "original",
+            "creator": "OH Play community pack reference illustration",
+            "license": { "id": "CC-BY-4.0", "name": "Creative Commons Attribution 4.0 International", "url": "https://creativecommons.org/licenses/by/4.0/" },
+            "modifications": []
+          }
+        },
+        "sources": [
+          {
+            "id": "yellowstone-bison",
+            "label": "Yellowstone National Park — Yellowstone Bison",
+            "url": "https://www.nps.gov/yell/learn/nature/upload/Yellowstone_Bison_ForWeb.pdf",
+            "accessedAt": "2026-08-25",
+            "fields": ["summary", "stats.adult-mass-kg", "stats.shoulder-height-m", "stats.top-land-speed-kph"]
+          },
+          {
+            "id": "missouri-bison",
+            "label": "Missouri National Recreational River — Bison",
+            "url": "https://www.nps.gov/mnrr/learn/nature/bison.htm",
+            "accessedAt": "2026-08-25",
+            "fields": ["name.secondaryName", "facts.primary-habitat"]
+          }
+        ]
+      },
+      {
+        "id": "gray-wolf",
+        "name": {
+          "display": { "en": "Gray wolf", "hu": "Szürke farkas" },
+          "secondaryName": "Canis lupus"
+        },
+        "summary": {
+          "en": "In winter, many wolves live in family packs that can work together to raise pups and hunt.",
+          "hu": "Télen sok farkas családi falkában él, amely együtt neveli a kölyköket és vadászik."
+        },
+        "facts": [
+          {
+            "key": "primary-habitat",
+            "label": { "en": "Primary habitat", "hu": "Elsődleges élőhely" },
+            "value": { "en": "Forests, tundra and grasslands", "hu": "Erdők, tundra és füves területek" }
+          }
+        ],
+        "stats": {
+          "adult-mass-kg": { "value": 41, "reportedRange": { "min": 41, "max": 50 } },
+          "shoulder-height-m": { "value": 0.77, "reportedRange": { "min": 0.77, "max": 0.81 } },
+          "top-land-speed-kph": { "value": 64, "reportedRange": { "min": 56, "max": 64 } }
+        },
+        "image": {
+          "path": "assets/gray-wolf.svg",
+          "alt": { "en": "Reference illustration of a gray wolf", "hu": "Szürke farkas referenciaillusztrációja" },
+          "attribution": {
+            "origin": "original",
+            "creator": "OH Play community pack reference illustration",
+            "license": { "id": "CC-BY-4.0", "name": "Creative Commons Attribution 4.0 International", "url": "https://creativecommons.org/licenses/by/4.0/" },
+            "modifications": []
+          }
+        },
+        "sources": [
+          {
+            "id": "fws-gray-wolf",
+            "label": "U.S. Fish & Wildlife Service — Gray Wolf (Canis lupus)",
+            "url": "https://www.fws.gov/species/gray-wolf-canis-lupus",
+            "accessedAt": "2026-08-25",
+            "fields": ["name.secondaryName", "facts.primary-habitat"]
+          },
+          {
+            "id": "voyageurs-gray-wolf",
+            "label": "Voyageurs National Park — Gray wolf",
+            "url": "https://www.nps.gov/voya/learn/nature/gray-wolf.htm",
+            "accessedAt": "2026-08-25",
+            "fields": ["summary"]
+          },
+          {
+            "id": "yellowstone-wolf",
+            "label": "Yellowstone National Park — Wolf Ecology",
+            "url": "https://www.nps.gov/yell/learn/nature/wolf.htm",
+            "accessedAt": "2026-08-25",
+            "fields": ["stats.adult-mass-kg", "stats.shoulder-height-m", "stats.top-land-speed-kph"]
+          }
+        ]
+      }
+    ]
+  }
+}
