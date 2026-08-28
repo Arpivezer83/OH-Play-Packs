@@ -15,6 +15,11 @@ The repository MIT licence never grants rights to third-party images, text,
 data, or other contributed content. Read [`LICENSING.md`](LICENSING.md) before
 reusing anything beyond the starter infrastructure.
 
+For original community pack content, the preferred default is
+**CC BY-NC-SA 4.0** (`CC-BY-NC-SA-4.0`). The creator keeps ownership and may
+separately commercialise their own work. Third-party assets retain their own
+licences.
+
 ## Which situation fits you?
 
 ### I have an idea

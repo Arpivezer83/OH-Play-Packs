@@ -16,6 +16,11 @@ The V1 supported external type is a **Game Cards world**. A real pack needs:
 Submit only content and assets you have the right to share. A pack-level
 licence never replaces an individual third-party asset's licence.
 
+Your original work remains yours; OH Play does not take ownership. We prefer
+`CC-BY-NC-SA-4.0` for original pack content so it can be played and shared
+non-commercially. You may separately commercialise your own work or grant
+different commercial permission.
+
 ## Learn from the examples
 
 [`examples/template/`](examples/template/) explains the smallest structure.

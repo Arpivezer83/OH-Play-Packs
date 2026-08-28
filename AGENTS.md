@@ -38,6 +38,10 @@ source supports a field when it does not.
 The repository's MIT licence applies to its starter tooling and documentation;
 it does **not** permit copying arbitrary images, text, datasets, or other
 third-party assets. Follow each pack's and asset's own licensing metadata.
+For original pack content, the preferred contribution licence is
+`CC-BY-NC-SA-4.0`; this keeps authorship with the creator and does not grant
+commercial rights to other parties. Never infer permission from the repository
+licence. Unresolved rights must be reported to the human.
 Report unresolved rights to the human rather than treating the repository
 licence as permission.
 
