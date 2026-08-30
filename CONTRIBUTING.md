@@ -4,6 +4,16 @@ OH Play welcomes finished, well-prepared packs through this repository. It is
 curated: a passing validator result is necessary but does not guarantee
 acceptance, publication, factual endorsement, or legal/licence verification.
 
+## GitHub terms, in plain language
+
+If some of this is unfamiliar: a **repo** (repository) is this project's
+public folder; a **fork** is your own personal copy of it under your GitHub
+account; a **branch** is a working version of your fork set aside for one
+change; a **pull request (PR)** is a request asking OH Play to review your
+proposed pack; the **validator** is the automatic technical checker described
+below; **CI** is the automatic GitHub check that runs the validator for you
+the moment you open a pull request.
+
 ## Before you start
 
 The V1 supported external type is a **Game Cards world**. A real pack needs:
@@ -118,7 +128,13 @@ published in OH Play.
 
 ## If you only have an idea
 
-You do not need GitHub or programming to have an idea for OH Play. The public
-OH Play site will surface the contact route in C4B. Until then, use the contact
-option on OH Play; do not invent an unofficial address or submit incomplete
-technical packs.
+You do not need GitHub or programming to have an idea for OH Play. Use the
+idea/contact option already on the OH Play website (**Contribute → I only
+have an idea**) rather than trying to turn an unfinished idea into an
+incomplete technical pack submission here. A human reads every idea and
+lets you know whether it fits OH Play and what a good next step looks like.
+
+The standardized, automatically validated pack format described in this
+document currently covers Game Cards worlds only. OH Play is open to other
+kinds of game ideas too — they just don't have a technical submission format
+here yet, so the idea route above is the right way to send them.
