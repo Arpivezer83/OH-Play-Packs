@@ -389,6 +389,16 @@ function validateAssetFile(packRoot, imagePath, path, issues) {
     issues.push(issue('REMOTE_RUNTIME_ASSET', path, 'Runtime image paths must be local files, not HTTP(S) URLs.'))
     return
   }
+  // Any other URI scheme (data:, javascript:, blob:, vbscript:, file:, and
+  // so on) is rejected explicitly and by name, rather than left to fail
+  // later as a generic "file not found" once resolution finds no such path
+  // on disk — a deliberate scheme like javascript: is a different kind of
+  // problem than a typo, and should be reported as one.
+  const schemeMatch = /^([a-z][a-z0-9+.-]*):/i.exec(imagePath)
+  if (schemeMatch) {
+    issues.push(issue('UNSUPPORTED_ASSET_URL_SCHEME', path, `Runtime image path must be a local relative file path, not a "${schemeMatch[1]}:" URL.`))
+    return
+  }
   if (isAbsolute(imagePath)) {
     issues.push(issue('ABSOLUTE_ASSET_PATH', path, 'Runtime image path must be relative to the pack directory.'))
     return

@@ -6,7 +6,8 @@
   "scripts": {
     "validate": "node scripts/validate-community-pack.mjs",
     "validate:all": "node scripts/validate-community-packs.mjs",
-    "test": "node scripts/test-public-kit.mjs"
+    "test:security": "node scripts/test-pack-pr-security.mjs",
+    "test": "node scripts/test-public-kit.mjs && npm run test:security"
   },
   "engines": {
     "node": ">=20"
