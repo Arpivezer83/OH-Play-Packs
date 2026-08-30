@@ -146,12 +146,13 @@ The human test we apply: *if the attention-grabbing mechanics disappeared,
 would there still be something worth playing?*
 
 When a submission does not go forward, reviewers name the specific reason —
-for example `technical-invalid`, `rights-or-provenance`, `child-safety`,
-`advertising-or-promotion`, `privacy-or-tracking`, `manipulative-engagement`,
-`editorial-quality`, `unclear-rules`, `outside-current-pack-format`,
-`weak-oh-fit`, or `duplicate-or-too-similar` — rather than a vague "it
-doesn't feel OnlyHuman enough." A rejected submission is not necessarily
-rejected forever; a revised version addressing the named reason is welcome.
+for example `technical-invalid`, `incomplete`, `rights-or-provenance`,
+`factual-sourcing`, `child-safety`, `advertising-or-promotion`,
+`privacy-or-tracking`, `manipulative-engagement`, `editorial-quality`,
+`unclear-rules`, `outside-current-pack-format`, `weak-oh-fit`, or
+`duplicate-or-too-similar` — rather than a vague "it doesn't feel OnlyHuman
+enough." A rejected submission is not necessarily rejected forever; a
+revised version addressing the named reason is welcome.
 
 ## Mistakes happen
 
