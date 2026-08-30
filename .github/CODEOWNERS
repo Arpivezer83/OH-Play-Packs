@@ -1,0 +1,6 @@
+# Every path in this repository defaults to this owner for review purposes.
+# This file is informational: "Require review from Code Owners" is not
+# currently enabled on the default branch, so this does not by itself block
+# any merge. It exists so GitHub can suggest the right reviewer automatically
+# and so that toggle can be turned on later without a separate setup step.
+* @Arpivezer83
