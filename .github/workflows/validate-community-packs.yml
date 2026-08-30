@@ -1,37 +1,137 @@
 name: Validate OH Play community packs
 
+# SECURITY DESIGN — read before changing this file.
+#
+# GitHub-documented execution model (verified directly against official
+# docs before this design was written — see the "GitHub execution-model
+# finding" section of this repository's security history for the exact
+# citations):
+#
+#   pull_request        — the workflow DEFINITION that actually runs is
+#                          read from the pull request's own merge branch.
+#                          A contributor can edit this very file inside
+#                          their PR and change what a "trusted validator"
+#                          job does, even if every step inside it only
+#                          ever checks out base-branch *code* — the
+#                          attacker controls which STEPS run, not just what
+#                          code those steps read. An earlier version of
+#                          this workflow used the plain pull_request
+#                          trigger for exactly the opposite reason (to
+#                          avoid pull_request_target's higher privilege),
+#                          and that reasoning was incomplete: checking out
+#                          the base branch inside a step does not help if
+#                          the attacker can simply delete that step, or
+#                          replace the whole job with one that always
+#                          reports success under the same check name.
+#
+#   pull_request_target  — the workflow definition that runs is ALWAYS read
+#                          from the base repository's default branch,
+#                          regardless of what the PR's own copy of this
+#                          file says. That is the one property this gate
+#                          actually needs. GitHub's own docs warn this
+#                          trigger is privileged and can expose secrets or
+#                          write access if a workflow using it also checks
+#                          out and executes PR-supplied code — so this
+#                          workflow follows the documented mitigation:
+#                          never check out the PR head as a working tree,
+#                          never run anything the PR supplies, keep
+#                          `permissions: contents: read` (no secrets are
+#                          referenced anywhere below), and only ever read
+#                          the PR's head commit as inert data through Git
+#                          plumbing (`git ls-tree` / `git cat-file` — see
+#                          scripts/materialize-pr-pack.mjs), never through
+#                          a checkout or an archive extraction of it.
+#
+# Every job below therefore:
+#  - always runs the workflow file / job graph from the BASE branch (a
+#    property of the pull_request_target trigger itself, not something a
+#    PR's own steps could ever override);
+#  - always runs the boundary check and the pack validator using scripts
+#    checked out from the PR's BASE commit;
+#  - treats the PR's HEAD commit purely as data: first a name-status diff
+#    to compute changed paths, then a git-ls-tree/cat-file-based
+#    materialization of exactly one pack directory — never a checkout,
+#    never an execution of anything the PR supplies, never an archive
+#    extraction that could create arbitrary filesystem entries (symlinks,
+#    gitlinks) straight from the PR's own tree.
+#
+# A same-repository (non-fork) PR — which by definition can only be opened
+# by someone who already has write access to this repository — is routed
+# to a separate, ordinary pull_request-triggered workflow instead
+# (maintainer-checks.yml), so legitimate maintainer infrastructure work is
+# never forced through the external-contributor pack boundary below. See
+# that workflow's own header comment for why that routing is safe and does
+# not weaken anything for external contributors: their PRs always have
+# head.repo.full_name != github.repository and always run the jobs below
+# in full.
+
 on:
-  pull_request:
-    paths:
-      - 'packs/game-cards/**'
-      - 'schema/**'
-      - 'scripts/community-pack-*.mjs'
-      - 'scripts/validate-community-pack.mjs'
-      - 'scripts/validate-community-packs.mjs'
-      - 'scripts/validate-changed-community-packs.mjs'
-      - 'package.json'
-      - 'package-lock.json'
+  pull_request_target:
+    branches: [main]
 
 permissions:
   contents: read
 
+concurrency:
+  group: validate-community-packs-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
-  validate:
-    name: Validate submitted packs
+  boundary:
+    name: Enforce single-pack submission boundary
     runs-on: ubuntu-latest
+    # Route selector only, never a trust decision about PR *content*. See
+    # the file header above.
+    if: github.event.pull_request.head.repo.full_name != github.repository
+    outputs:
+      pack_id: ${{ steps.boundary.outputs.pack_id }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout base branch (trusted validator code)
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0 — pinned to an immutable commit, not the movable v4 tag
         with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0 — pinned to an immutable commit, not the movable v4 tag
         with:
           node-version: 22
           cache: npm
       - run: npm ci --ignore-scripts
-      - name: Validate changed submitted packs
+      - name: Fetch PR head commit (data only — never checked out as the working tree)
+        run: git fetch --no-tags --depth=1 origin "refs/pull/${{ github.event.pull_request.number }}/head"
+      - name: Compute the PR's changed paths
+        run: git diff --name-status "${{ github.event.pull_request.base.sha }}" FETCH_HEAD > "$RUNNER_TEMP/oh-play-pack-changes.txt"
+      - name: Enforce that the PR stays inside its own pack directory
+        id: boundary
+        run: node scripts/enforce-pack-pr-boundary.mjs "$RUNNER_TEMP/oh-play-pack-changes.txt"
+
+  validate:
+    name: Validate submitted pack content
+    needs: boundary
+    if: github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout base branch (trusted validator code)
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0 — pinned to an immutable commit, not the movable v4 tag
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0 — pinned to an immutable commit, not the movable v4 tag
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Fetch PR head commit (data only — never checked out as the working tree)
+        run: git fetch --no-tags --depth=1 origin "refs/pull/${{ github.event.pull_request.number }}/head"
+      - name: Safely materialize the PR's one pack directory
+        id: materialize
+        # git ls-tree/cat-file only. This never pipes an archive/tar-style
+        # extraction of the PR's tree straight onto disk (which would let
+        # the PR's own tree dictate what lands there, symlinks and all) and
+        # never checks out the PR head as a working tree. See
+        # scripts/materialize-pr-pack.mjs.
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-        run: |
-          git diff --name-status "$BASE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/oh-play-pack-changes.txt"
-          node scripts/validate-changed-community-packs.mjs "$RUNNER_TEMP/oh-play-pack-changes.txt"
+          PACK_ID: ${{ needs.boundary.outputs.pack_id }}
+        run: node scripts/materialize-pr-pack.mjs FETCH_HEAD "$PACK_ID" "$RUNNER_TEMP/pack-under-review"
+      - name: Validate the submitted pack with the trusted validator
+        if: steps.materialize.outputs.has_pack == 'true'
+        run: node scripts/validate-community-pack.mjs "$RUNNER_TEMP/pack-under-review"
