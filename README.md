@@ -5,6 +5,15 @@ This is the starter kit and official finished-pack contribution repository for
 a **Game Cards world**. You do not need the private OH Play application or any
 knowledge of React, Vite, or its internal code.
 
+**OH Play is not anti-screen.** We believe screens and digital tools are
+genuinely valuable when they entertain meaningfully, teach something, help
+people create, think, discover, or connect — what we push back on is
+technology deliberately built to maximize time on the device or manipulate
+attention. **OH Play is open to creators, not fully open source**: the core
+app is curated and maintained by OnlyHuman directly, but this repository —
+schema, validator, docs — exists to make contribution itself transparent and
+accessible to anyone.
+
 ## Licensing at a glance
 
 **Starter kit, tooling, validators, schema, and contributor docs →
@@ -179,6 +188,24 @@ ideas too; those just don't yet have a standardized technical format here, so
 send them through the idea route above (path A) instead, and a human will
 work out the right next step with you.
 
+## The OH Play acceptance standard
+
+Passing the validator (`VALID`) is a technical result, not a publication
+decision. Every submission — human-made or agent-assisted — is measured
+against the same checklist. **Required:** no advertising or engagement
+manipulation, safe and understandable for its stated audience, no
+unnecessary tracking, rights-cleared, no unsafe assets. **OH fit** (should
+meaningfully satisfy at least one): strengthens human connection, builds
+real-world skill or curiosity, encourages creativity, observation, or
+movement, or is a calm, non-manipulative digital moment. The human test: *if
+the attention-grabbing mechanics disappeared, would there still be something
+worth playing?* See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full
+checklist and named rejection-reason categories.
+
+We check facts, rules, and sources more than once — human review plus
+automated and agent-assisted checks — but mistakes still happen. Found one?
+Use the idea/contact route above; we'll fix it.
+
 ## Magyarul, röviden
 
 Nem kell fejlesztőnek lenned ahhoz, hogy hozzájárulj az OH Playhez. Három út
@@ -209,6 +236,15 @@ ellenőrzés, amit a GitHub a PR megnyitásakor azonnal lefuttat.
 Az automatikusan ellenőrizhető pack-formátum egyelőre a Game Cards
 kártyacsomagokhoz érhető el. Más játékötleteket is örömmel várunk — ehhez az
 A utat használd, és együtt kitaláljuk a következő lépést.
+
+**Az OH Play elfogadási mércéje:** a `VALID` technikai eredmény, nem
+publikálási döntés. Minden beküldést ugyanaz a lista mér: nincs benne reklám
+vagy manipulatív mechanika, biztonságos és érthető a megadott közönségnek,
+nincs szükségtelen követés, jogtisztázott, és érdemben erősíti az emberi
+kapcsolódást, a valódi tudást vagy kreativitást. A teljes listát és az
+elutasítási okokat lásd a [`CONTRIBUTING.md`](CONTRIBUTING.md) fájlban.
+Többször ellenőrzünk, de hiba előfordulhat — ha találsz egyet, szólj nekünk
+a fenti kapcsolatfelvételi úton.
 
 ## Commands
 

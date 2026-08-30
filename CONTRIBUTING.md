@@ -4,6 +4,19 @@ OH Play welcomes finished, well-prepared packs through this repository. It is
 curated: a passing validator result is necessary but does not guarantee
 acceptance, publication, factual endorsement, or legal/licence verification.
 
+**OH Play is not anti-screen.** We believe screens and digital tools are
+genuinely valuable when they entertain meaningfully, teach something, help
+people create, think, discover, or connect — what we push back on is
+technology deliberately built to maximize time on the device, exploit
+compulsive behavior, or manipulate attention. That is the standard every
+contribution is measured against below.
+
+**OH Play is open to creators, not fully open source.** The core app is not
+currently an open-source community project; OnlyHuman sets the mission,
+safety boundaries, and architecture, and maintains it directly. This
+repository exists to make contribution transparent and accessible to
+anyone, not just people who already work with us.
+
 ## GitHub terms, in plain language
 
 If some of this is unfamiliar: a **repo** (repository) is this project's
@@ -102,15 +115,63 @@ you what to fix; CI pass is not a publication decision.
 ## What happens after CI
 
 Human reviewers assess editorial fit, factual sources, translations, gameplay,
-image usability, and whether rights metadata appears plausible. They may ask
-for changes or decline a technically valid pack. Good candidates encourage
-playing together, work for families/friends/groups, are clear and respectful,
-accurate where factual, properly sourced, legally usable, ad-free, and
-appropriate for their audience.
+image usability, and whether rights metadata appears plausible. They apply
+the same canonical checklist to every submission — the OH Play acceptance
+standard — not an unwritten feeling:
 
-Spam, disguised marketing, unlicensed copied material, unclear ownership,
-broken/incomplete packs, tracking/account requirements, and technically valid
-but ill-fitting content are not accepted by default.
+**Required** — a submission normally fails if any of these fail:
+
+- no advertising or disguised marketing;
+- no engagement manipulation or addictive loop design;
+- appropriate and safe for the stated audience;
+- no unnecessary accounts, tracking, or personal-data collection;
+- rights-cleared or owned contribution;
+- important factual claims can be verified where relevant;
+- rules are understandable and the activity is genuinely playable;
+- no malware, executable payload, external runtime code, or unsafe assets;
+- no hateful, sexual, exploitative, or otherwise inappropriate material for
+  the stated audience.
+
+**OH fit** — should meaningfully satisfy at least one, preferably several:
+
+- strengthens human-to-human connection;
+- builds real-world skills, knowledge, or curiosity;
+- encourages creativity;
+- encourages observation or exploration;
+- encourages movement or an offline continuation;
+- provides a calm, finite, non-manipulative digital experience;
+- contributes something genuinely useful or original to the collection.
+
+The human test we apply: *if the attention-grabbing mechanics disappeared,
+would there still be something worth playing?*
+
+When a submission does not go forward, reviewers name the specific reason —
+for example `technical-invalid`, `rights-or-provenance`, `child-safety`,
+`advertising-or-promotion`, `privacy-or-tracking`, `manipulative-engagement`,
+`editorial-quality`, `unclear-rules`, `outside-current-pack-format`,
+`weak-oh-fit`, or `duplicate-or-too-similar` — rather than a vague "it
+doesn't feel OnlyHuman enough." A rejected submission is not necessarily
+rejected forever; a revised version addressing the named reason is welcome.
+
+## Mistakes happen
+
+We check rules, facts, sources, and community contributions more than once —
+human review plus automated and agent-assisted checks. That reduces errors;
+it does not guarantee perfection. If you find something inaccurate, outdated,
+or off, tell us the same way you'd send an idea (see below) — we will fix it.
+
+## About the technical validator
+
+The validator checks structure, local assets, provenance completeness, and
+licensing metadata — it does not verify that a factual claim is *true*, only
+that a source is present and traceable. `VALID` is a technical result, never
+a publication decision. The public CI
+([`.github/workflows/validate-community-packs.yml`](.github/workflows/validate-community-packs.yml))
+also never runs a pull request's own copy of the validator against itself: it
+checks out the trusted base-branch code to decide whether *your* PR passes,
+so a PR cannot make itself pass by editing the validator — and a PR that
+touches anything outside its own `packs/game-cards/<pack-id>/` fails that
+check by design, not by accident.
 
 ## Promotion into OH Play
 

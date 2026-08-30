@@ -1,37 +1,100 @@
 name: Validate OH Play community packs
 
+# SECURITY DESIGN — read before changing this file.
+#
+# A pack PR is untrusted input. The validator that decides whether a PR is
+# valid must never be code the same PR can rewrite — otherwise a malicious
+# contributor could just make the validator always say VALID. So every job
+# below checks out the repository at the PR's BASE commit (trusted,
+# maintainer-controlled code) to run the boundary check and the validator
+# itself; the PR's HEAD commit is only ever used as inert *data* — first to
+# compute a list of changed paths (never executed), then, once the boundary
+# check has confirmed the PR only touches one pack directory, to copy just
+# that one directory's files (pack.json, README, image assets — never
+# executed either) into the trusted checkout for the trusted validator to
+# read.
+#
+# This intentionally uses the standard, lower-privilege pull_request trigger
+# below — never its higher-privilege "_target" counterpart, which would hand
+# a maintainer token and secrets to a workflow run driven by fork content. No
+# secrets are available here, permissions stay contents: read, and nothing
+# from the PR is ever given repository write access or a token.
+
 on:
   pull_request:
     paths:
       - 'packs/game-cards/**'
       - 'schema/**'
-      - 'scripts/community-pack-*.mjs'
-      - 'scripts/validate-community-pack.mjs'
-      - 'scripts/validate-community-packs.mjs'
-      - 'scripts/validate-changed-community-packs.mjs'
+      - 'scripts/**'
       - 'package.json'
       - 'package-lock.json'
+      - '.github/workflows/validate-community-packs.yml'
 
 permissions:
   contents: read
 
 jobs:
-  validate:
-    name: Validate submitted packs
+  boundary:
+    name: Enforce single-pack submission boundary
     runs-on: ubuntu-latest
+    outputs:
+      pack_id: ${{ steps.boundary.outputs.pack_id }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout base branch (trusted validator code)
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0 — pinned to an immutable commit, not the movable v4 tag
         with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+      - name: Fetch PR head commit (data only — not checked out as the working tree)
+        run: git fetch --no-tags --depth=1 origin "refs/pull/${{ github.event.pull_request.number }}/head"
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0 — pinned to an immutable commit, not the movable v4 tag
         with:
           node-version: 22
           cache: npm
       - run: npm ci --ignore-scripts
-      - name: Validate changed submitted packs
+      - name: Compute the PR's changed paths
+        run: git diff --name-status "${{ github.event.pull_request.base.sha }}" FETCH_HEAD > "$RUNNER_TEMP/oh-play-pack-changes.txt"
+      - name: Enforce that the PR stays inside its own pack directory
+        id: boundary
+        run: node scripts/enforce-pack-pr-boundary.mjs "$RUNNER_TEMP/oh-play-pack-changes.txt"
+
+  validate:
+    name: Validate submitted pack content
+    needs: boundary
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout base branch (trusted validator code)
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0 — pinned to an immutable commit, not the movable v4 tag
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+      - name: Fetch PR head commit (data only — not checked out as the working tree)
+        run: git fetch --no-tags --depth=1 origin "refs/pull/${{ github.event.pull_request.number }}/head"
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0 — pinned to an immutable commit, not the movable v4 tag
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Copy the PR's one pack directory into the trusted checkout
+        id: copy
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PACK_ID: ${{ needs.boundary.outputs.pack_id }}
         run: |
-          git diff --name-status "$BASE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/oh-play-pack-changes.txt"
-          node scripts/validate-changed-community-packs.mjs "$RUNNER_TEMP/oh-play-pack-changes.txt"
+          rm -rf "packs/game-cards/$PACK_ID"
+          mkdir -p "packs/game-cards/$PACK_ID"
+          # A pack-deletion PR touches paths under packs/game-cards/$PACK_ID
+          # but leaves nothing there at HEAD — that is a legitimate removal,
+          # not a submission to validate, so archive is allowed to produce
+          # an empty tree here rather than failing the job.
+          git archive FETCH_HEAD -- "packs/game-cards/$PACK_ID" | tar -x
+          if [ -f "packs/game-cards/$PACK_ID/pack.json" ]; then
+            echo "has_pack=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_pack=false" >> "$GITHUB_OUTPUT"
+            echo "No pack.json at packs/game-cards/$PACK_ID in this PR — treating as a pack removal, nothing to validate."
+          fi
+      - name: Validate the submitted pack with the trusted validator
+        if: steps.copy.outputs.has_pack == 'true'
+        env:
+          PACK_ID: ${{ needs.boundary.outputs.pack_id }}
+        run: node scripts/validate-community-pack.mjs "packs/game-cards/$PACK_ID"

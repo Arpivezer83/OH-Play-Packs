@@ -2,7 +2,7 @@
 // repository-directory policy and changed-pack selection; they never execute
 // code from a contributed pack.
 
-import { existsSync, lstatSync, readdirSync, readFileSync, statSync } from 'node:fs'
+import { closeSync, existsSync, lstatSync, openSync, readdirSync, readFileSync, readSync, statSync } from 'node:fs'
 import { extname, join, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { validatePackDirectory } from './community-pack-validator.mjs'
@@ -16,6 +16,68 @@ export const COMMUNITY_PACKS_REPOSITORY_PATH = isPublicPackKit ? 'packs/game-car
 export const ALLOWED_SUBMISSION_ASSET_EXTENSIONS = new Set(['.avif', '.jpeg', '.jpg', '.png', '.webp'])
 export const EXECUTABLE_FILE_EXTENSIONS = new Set(['.cjs', '.js', '.mjs', '.sh', '.ts', '.tsx'])
 const ALLOWED_ROOT_FILES = new Set(['pack.json', 'README.md', 'README.txt'])
+
+// Hostile-submission ceilings (security hardening pass): a card pack is a
+// handful of small card portraits, never a bulk asset drop. These bound the
+// work a reviewer's machine and CI runner do on a single submission, so a
+// pathological pack (one huge file, or thousands of tiny ones) fails fast
+// with a clear reason instead of degrading validation for everyone.
+export const MAX_SUBMISSION_ASSET_BYTES = 8 * 1024 * 1024 // 8 MB per asset file
+export const MAX_SUBMISSION_FILE_COUNT = 200 // total files anywhere under the pack directory
+
+// Magic-byte signatures for the four allowed raster formats. A file's
+// extension is a claim the contributor makes; this checks the bytes agree
+// with it, so an executable, script, or disguised SVG renamed to ".png"
+// cannot pass as a legitimate asset just because of its file name.
+function matchesPngSignature(buffer) {
+  const signature = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]
+  return signature.every((byte, index) => buffer[index] === byte)
+}
+function matchesJpegSignature(buffer) {
+  return buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff
+}
+function matchesWebpSignature(buffer) {
+  return buffer.toString('ascii', 0, 4) === 'RIFF' && buffer.toString('ascii', 8, 12) === 'WEBP'
+}
+function matchesAvifSignature(buffer) {
+  if (buffer.toString('ascii', 4, 8) !== 'ftyp') return false
+  const brand = buffer.toString('ascii', 8, 12)
+  return brand === 'avif' || brand === 'avis' || brand === 'mif1' || brand === 'msf1'
+}
+const IMAGE_SIGNATURE_CHECKS = new Map([
+  ['.png', matchesPngSignature],
+  ['.jpg', matchesJpegSignature],
+  ['.jpeg', matchesJpegSignature],
+  ['.webp', matchesWebpSignature],
+  ['.avif', matchesAvifSignature],
+])
+
+/** Reads only the first 16 bytes of a file — enough to identify any of the
+ * four allowed raster signatures — regardless of how large the file is, so
+ * checking a maliciously huge file costs a handful of bytes, not a full read. */
+export function readFileSignature(path, length = 16) {
+  const buffer = Buffer.alloc(length)
+  const fd = openSync(path, 'r')
+  try {
+    const bytesRead = readSync(fd, buffer, 0, length, 0)
+    return buffer.subarray(0, bytesRead)
+  } finally {
+    closeSync(fd)
+  }
+}
+
+/** True only if `path`'s actual leading bytes match the raster format its
+ * extension claims. An unrecognized extension is not this function's
+ * concern — the caller already rejects those separately. */
+export function assetContentMatchesExtension(path, extension) {
+  const check = IMAGE_SIGNATURE_CHECKS.get(extension)
+  if (!check) return true
+  try {
+    return check(readFileSignature(path))
+  } catch {
+    return false
+  }
+}
 
 function issue(code, path, message) {
   return { code, severity: 'error', path, message }
@@ -54,8 +116,16 @@ export function discoverCommunityPackDirectories(collectionDirectory) {
     .sort((a, b) => a.localeCompare(b))
 }
 
-function walkSubmissionDirectory(root, current, issues) {
+function walkSubmissionDirectory(root, current, issues, state) {
   for (const entry of readdirSync(current, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
+    state.fileCount += 1
+    if (state.fileCount > MAX_SUBMISSION_FILE_COUNT) {
+      if (!state.tooManyFilesReported) {
+        state.tooManyFilesReported = true
+        issues.push(issue('TOO_MANY_SUBMISSION_FILES', toPortablePath(relative(root, current)) || '.', `A submitted pack may contain at most ${MAX_SUBMISSION_FILE_COUNT} files in total.`))
+      }
+      return
+    }
     const entryPath = join(current, entry.name)
     const path = toPortablePath(relative(root, entryPath))
     let metadata
@@ -74,7 +144,8 @@ function walkSubmissionDirectory(root, current, issues) {
         issues.push(issue('UNEXPECTED_PACK_DIRECTORY', path, 'Only the assets directory is allowed beside pack.json and an optional README.'))
         continue
       }
-      walkSubmissionDirectory(root, entryPath, issues)
+      walkSubmissionDirectory(root, entryPath, issues, state)
+      if (state.tooManyFilesReported) return
       continue
     }
     if (!metadata.isFile()) {
@@ -95,8 +166,18 @@ function walkSubmissionDirectory(root, current, issues) {
     const extension = extname(entry.name).toLowerCase()
     if (EXECUTABLE_FILE_EXTENSIONS.has(extension)) {
       issues.push(issue('EXECUTABLE_PACK_FILE', path, 'Executable or source-code files are not allowed in submitted packs.'))
-    } else if (!ALLOWED_SUBMISSION_ASSET_EXTENSIONS.has(extension)) {
+      continue
+    }
+    if (!ALLOWED_SUBMISSION_ASSET_EXTENSIONS.has(extension)) {
       issues.push(issue('UNSUPPORTED_ASSET_FILE_TYPE', path, `Asset type "${extension || '(no extension)'}" is not allowed. Use AVIF, JPEG, PNG, or WebP raster assets.`))
+      continue
+    }
+    if (metadata.size > MAX_SUBMISSION_ASSET_BYTES) {
+      issues.push(issue('SUBMISSION_ASSET_TOO_LARGE', path, `Asset is ${metadata.size} bytes; submitted assets may be at most ${MAX_SUBMISSION_ASSET_BYTES} bytes.`))
+      continue
+    }
+    if (!assetContentMatchesExtension(entryPath, extension)) {
+      issues.push(issue('ASSET_CONTENT_MISMATCH', path, `File content does not match its "${extension}" extension — the actual file signature was not recognized as that format.`))
     }
   }
 }
@@ -117,7 +198,7 @@ export function validateSubmissionFilePolicy(packDirectory) {
   if (!isDirectory(root)) {
     return { valid: false, issues: [issue('PACK_DIRECTORY_NOT_FOUND', 'path', 'Pack directory was not found or cannot be read.')] }
   }
-  walkSubmissionDirectory(root, root, issues)
+  walkSubmissionDirectory(root, root, issues, { fileCount: 0, tooManyFilesReported: false })
   return { valid: issues.length === 0, issues }
 }
 
