@@ -1,0 +1,52 @@
+name: Maintainer infrastructure checks
+
+# This is the "maintainer infra PR" companion to
+# validate-community-packs.yml's external-contributor pack boundary — see
+# that file's header comment for the full trust-boundary design and the
+# GitHub-documented pull_request vs. pull_request_target distinction this
+# repository relies on.
+#
+# Why this workflow is safe to run with plain `pull_request` (i.e. using
+# the PR's OWN code, not just base-branch code): a pull_request can only
+# come from this same repository (github.event.pull_request.head.repo ==
+# github.event.pull_request.base.repo) if its author already has write
+# access to this repository. GitHub does not let anyone else open a
+# same-repository branch PR — an external contributor without write access
+# can only ever open a fork PR, which always has a *different*
+# head.repo.full_name and is therefore never routed here (the `if:` guard
+# below skips this workflow entirely for those, and the required
+# `Validate submitted pack content` / `Enforce single-pack submission
+# boundary` checks from validate-community-packs.yml apply to them
+# instead). Running this repository's own test suite against a trusted
+# collaborator's own PR content carries the same risk profile as any
+# ordinary CI pipeline — it is not the "untrusted PR validates itself"
+# problem this repository's pack-submission gate exists to close, because
+# nobody untrusted can reach this path.
+#
+# No secrets are used, and permissions stay contents: read regardless.
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: maintainer-checks-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Repository tests and security suite
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0 — pinned to an immutable commit, not the movable v4 tag
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0 — pinned to an immutable commit, not the movable v4 tag
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - run: npm run validate:all

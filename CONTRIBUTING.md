@@ -166,14 +166,19 @@ or off, tell us the same way you'd send an idea (see below) — we will fix it.
 The validator checks structure, local assets, provenance completeness, and
 licensing metadata — it does not verify that a factual claim is *true*, only
 that a source is present and traceable. `VALID` is a technical result, never
-a publication decision.
-
-This repository is in the middle of hardening how the public CI decides pack
-validity for pull requests it doesn't already trust — see
-[`scripts/enforce-pack-pr-boundary.mjs`](scripts/enforce-pack-pr-boundary.mjs)
-and [`scripts/materialize-pr-pack.mjs`](scripts/materialize-pr-pack.mjs) for
-the trusted building blocks landing first, and this section for the final
-wiring once the CI workflow itself switches over.
+a publication decision. The public CI
+([`.github/workflows/validate-community-packs.yml`](.github/workflows/validate-community-packs.yml))
+also never lets a pull request validate itself: for a fork PR, GitHub always
+runs the workflow *definition* from this repository's own default branch
+(not the PR's copy of that file), that trusted definition always runs the
+validator and schema from the base commit, and the PR's own content is only
+ever read as inert data — never checked out as a working tree, never
+executed — to find the one pack directory it touches. A PR that touches
+anything outside its own `packs/game-cards/<pack-id>/` fails that check by
+design, not by accident. A same-repository PR (only possible for someone who
+already has write access here) runs a separate maintainer checks workflow
+instead, so this boundary is never accidentally forced onto ordinary
+repository maintenance.
 
 ## Promotion into OH Play
 
