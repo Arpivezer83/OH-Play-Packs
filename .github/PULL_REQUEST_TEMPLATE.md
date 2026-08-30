@@ -9,26 +9,36 @@ Cards pack, not for a general idea.
 - **Pack title:**
 - **What does it contain?**
 
-## Technical check
+This PR should touch only `packs/game-cards/<your-pack-id>/` — nothing else.
+A PR that also changes the schema, scripts, workflows, or `package.json`
+cannot be validated automatically and needs a separate, maintainer-reviewed
+path instead; see [CONTRIBUTING.md](../CONTRIBUTING.md) for why.
 
-- [ ] I ran `npm run validate -- packs/game-cards/<pack-id>` and it passes.
-- [ ] English (`en`) content is complete.
-- [ ] Hungarian (`hu`) content is complete.
-- [ ] All runtime assets are included locally in the pack.
+## Required self-check
 
-## Sources and rights
+- [ ] No ads, promotion, or disguised marketing.
+- [ ] No unnecessary accounts, tracking, or personal-data collection.
+- [ ] Rights/provenance checked — I have the right to submit this content,
+      and third-party assets (if any) are identified with their own
+      provenance and licence.
+- [ ] Factual sources are provided for stats and factual claims.
+- [ ] English (`en`) and Hungarian (`hu`) content are both complete.
+- [ ] `npm run validate -- packs/game-cards/<pack-id>` passes locally.
+- [ ] Content is appropriate for the audience the pack states.
 
-- [ ] Factual fields and stats have traceable source/provenance metadata.
-- [ ] A pack-content licence is declared.
-- [ ] Each asset has the required creator, attribution, and licence metadata.
-- [ ] I have the right to submit the original content I contributed.
-- [ ] Third-party assets, if any, are identified with their provenance and licence.
+## OH fit
+
+Explain in 1–2 sentences why this belongs in OH Play — which of
+[CONTRIBUTING.md](../CONTRIBUTING.md)'s "OH fit" criteria it meaningfully
+satisfies:
+
+<!-- 1–2 sentences here -->
 
 ## For human review
 
-- [ ] This is not advertising or spam.
-- [ ] It is intended for OH Play's people-first play context.
-- [ ] I understand that technical validation does not guarantee acceptance or publication.
+- [ ] I understand technical validation (VALID) is not the same as
+      acceptance — a human still reviews every pack, applying the full
+      published acceptance standard.
 
 ### Notes for reviewers
 

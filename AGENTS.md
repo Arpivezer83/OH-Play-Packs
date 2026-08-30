@@ -41,15 +41,26 @@ third-party assets. Follow each pack's and asset's own licensing metadata.
 For original pack content, the preferred contribution licence is
 `CC-BY-NC-SA-4.0`; this keeps authorship with the creator and does not grant
 commercial rights to other parties. Never infer permission from the repository
-licence. Unresolved rights must be reported to the human.
-Report unresolved rights to the human rather than treating the repository
-licence as permission.
+licence — report unresolved rights to the human rather than treating the
+repository licence as permission.
 
 Separate known facts from unresolved information. Use traceable factual
 sources, preserve the required source field paths and access dates, and report
 unresolved factual or licensing issues to the human instead of filling them
 in. A passing validator is **not** permission to claim a pack is legally safe,
 copyright cleared, factually verified, or OH Play approved.
+
+## OH fit, not only schema validity
+
+A technically `VALID` pack can still be rejected by human review. Passing the
+validator means the *structure* is correct; it says nothing about whether the
+*content* belongs in OH Play. Before proposing a card/stat structure, check it
+against `CONTRIBUTING.md`'s acceptance standard: no advertising or engagement
+manipulation, no unnecessary tracking, safe and understandable for its stated
+audience, and it should meaningfully strengthen human connection, real-world
+skill or curiosity, creativity, observation, movement, or a calm
+non-manipulative digital moment. If the idea only works by grabbing
+attention — strip that away and ask whether anything worth playing remains.
 
 ## Working loop
 
