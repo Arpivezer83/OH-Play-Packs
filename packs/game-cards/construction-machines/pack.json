@@ -2,7 +2,7 @@
   "id": "construction-machines",
   "schemaVersion": 1,
   "packType": "game-cards-world",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": { "en": "Construction Machines", "hu": "Építőgépek" },
   "description": {
     "en": "Thirty-two real machines for noticing how digging, loading, grading, hauling and compaction equipment differ.",
@@ -130,7 +130,7 @@
         "summary": { "en": "A skid-steer turns by changing the speed of its left and right wheels.", "hu": "A csúszókormányzású rakodó a bal és jobb oldali kerekek sebességkülönbségével fordul." },
         "facts": [{ "key": "machine-type", "label": { "en": "Machine type", "hu": "Géptípus" }, "value": { "en": "Skid-steer loader", "hu": "Csúszókormányzású rakodó" } }],
         "stats": { "published-machine-mass-kg": { "value": 3777 }, "engine-power-kw": { "value": 55.4 }, "max-travel-speed-kph": { "value": 19.8 } },
-        "image": { "path": "assets/bobcat-s650.jpg", "alt": { "en": "A Bobcat S650 skid-steer loader", "hu": "Egy Bobcat S650 csúszókormányzású rakodó" }, "attribution": { "origin": "third-party", "creator": "Reise Reise", "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bobcat_S650.jpg", "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Bobcat_S650.jpg", "originalFilename": "Bobcat S650.jpg", "license": { "id": "CC-BY-SA-4.0", "name": "Creative Commons Attribution-ShareAlike 4.0 International", "url": "https://creativecommons.org/licenses/by-sa/4.0" }, "modifications": ["Resized to a 1280-pixel delivery copy from the original."], "accessedAt": "2026-09-10" } },
+        "image": { "path": "assets/bobcat-s650.jpg", "alt": { "en": "A Bobcat S650 skid-steer loader", "hu": "Egy Bobcat S650 csúszókormányzású rakodó" }, "attribution": { "origin": "third-party", "creator": "Daderot", "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bobcat_S650_-_Massachusetts.jpg", "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Bobcat_S650_-_Massachusetts.jpg", "originalFilename": "Bobcat S650 - Massachusetts.jpg", "license": { "id": "CC0-1.0", "name": "Creative Commons Zero v1.0 Universal", "url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en" }, "modifications": ["Resized to a 1280-pixel delivery copy from the original."], "accessedAt": "2026-09-11" } },
         "sources": [{ "id": "bobcat-s650-spec", "label": "Bobcat S650 specifications", "url": "https://assets.bobcat.com/products/skid-steer-loaders/specifications/S650-Specifications-iTier4_EN.pdf", "accessedAt": "2026-09-10", "fields": ["name.secondaryName", "summary", "facts.machine-type", "stats.published-machine-mass-kg", "stats.engine-power-kw", "stats.max-travel-speed-kph"], "note": "Two-speed option selected for maximum speed; weight and 55.4 kW are the published standard figures." }]
       },
       {
