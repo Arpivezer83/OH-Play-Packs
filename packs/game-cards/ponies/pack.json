@@ -1,0 +1,3044 @@
+{
+  "id": "ponies",
+  "schemaVersion": 1,
+  "packType": "game-cards-world",
+  "version": "1.0.0",
+  "title": {
+    "en": "Ponies",
+    "hu": "Pónik"
+  },
+  "description": {
+    "en": "Thirty-two real pony breeds and types, from working hill ponies to island survivors, for noticing what makes each one distinct.",
+    "hu": "Harminckét valós pónifajta és -típus, a hegyi munkapóniktól a szigeti túlélőkig, amelyeken keresztül megfigyelhető, mi teszi egyedivé mindegyiket."
+  },
+  "contributors": [
+    {
+      "name": "Arpivezer83",
+      "roles": [
+        "creator",
+        "researcher",
+        "translator"
+      ]
+    }
+  ],
+  "languages": [
+    "en",
+    "hu"
+  ],
+  "rights": {
+    "contentLicense": {
+      "id": "CC-BY-NC-SA-4.0",
+      "name": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
+      "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    "includesThirdPartyAssets": true
+  },
+  "compatibility": {
+    "gameCardsEngine": 1
+  },
+  "capabilities": [
+    "recognition"
+  ],
+  "content": {
+    "world": {
+      "id": "ponies",
+      "title": {
+        "en": "Ponies",
+        "hu": "Pónik"
+      },
+      "description": {
+        "en": "Look closely at real pony breeds and types from around the world and learn to tell them apart.",
+        "hu": "Figyeld meg alaposan a világ valós pónifajtáit és -típusait, és tanuld meg megkülönböztetni őket!"
+      },
+      "cardOrder": [
+        "shetland-pony",
+        "american-shetland-pony",
+        "welsh-mountain-pony",
+        "connemara-pony",
+        "dartmoor-pony",
+        "fell-pony",
+        "dales-pony",
+        "eriskay-pony",
+        "welsh-pony",
+        "new-forest-pony",
+        "exmoor-pony",
+        "highland-pony",
+        "kerry-bog-pony",
+        "gotland-pony",
+        "german-riding-pony",
+        "pottok",
+        "asturcon",
+        "garrano",
+        "faroe-pony",
+        "pony-of-the-americas",
+        "chincoteague-pony",
+        "newfoundland-pony",
+        "lac-la-croix-pony",
+        "hackney-pony",
+        "australian-riding-pony",
+        "timor-pony",
+        "manipuri-pony",
+        "basotho-pony",
+        "skyros-pony",
+        "misaki-pony",
+        "noma-pony",
+        "yonaguni-pony"
+      ],
+      "stats": []
+    },
+    "cards": [
+      {
+        "id": "shetland-pony",
+        "name": {
+          "display": {
+            "en": "Shetland Pony",
+            "hu": "Shetlandi póni"
+          }
+        },
+        "summary": {
+          "en": "A small, sturdy pony with a long mane and a double winter coat.",
+          "hu": "Kicsi, zömök póni hosszú sörénnyel és kétrétegű téli szőrzettel."
+        },
+        "facts": [
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "Up to 107 cm under the Shetland Pony Stud-Book Society standard.",
+              "hu": "A Shetland Pony Stud-Book Society előírása szerint legfeljebb 107 cm."
+            }
+          },
+          {
+            "key": "coat",
+            "label": {
+              "en": "Winter coat",
+              "hu": "Téli szőrzet"
+            },
+            "value": {
+              "en": "Long outer hairs cover a double coat that protects against rain.",
+              "hu": "A kétrétegű szőrzet hosszú fedőszőrei védenek az esőtől."
+            }
+          },
+          {
+            "key": "colours",
+            "label": {
+              "en": "Coat colours",
+              "hu": "Szőrszínek"
+            },
+            "value": {
+              "en": "The breed standard permits all horse colours except spotted patterns.",
+              "hu": "A fajtaleírás a párductarkaság kivételével minden lószínt megenged."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/shetland-pony.jpg",
+          "alt": {
+            "en": "A Shetland Pony",
+            "hu": "Egy Shetlandi póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Herbythyme",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Shetland_pony_-_Postbridge.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Shetland_pony_-_Postbridge.jpg",
+            "originalFilename": "Shetland pony - Postbridge.jpg",
+            "license": {
+              "id": "CC-BY-SA-4.0",
+              "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+              "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "spsbs-standard",
+            "label": "Shetland Pony Stud-Book Society — Breed Standard",
+            "url": "https://www.shetlandponystudbooksociety.co.uk/about-the-breed/breed-standard/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.height",
+              "facts.coat",
+              "facts.colours"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "american-shetland-pony",
+        "name": {
+          "display": {
+            "en": "American Shetland Pony",
+            "hu": "Amerikai shetlandi póni"
+          }
+        },
+        "summary": {
+          "en": "American breeders developed a distinct pony from imported Shetlands, with several different show types.",
+          "hu": "Az amerikai tenyésztők az importált shetlandi pónikból önálló pónifajtát alakítottak ki, többféle kiállítási típussal."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Development",
+              "hu": "Kialakulás"
+            },
+            "value": {
+              "en": "Developed in the United States from ponies imported in the late 1800s.",
+              "hu": "Az Egyesült Államokban alakult ki, az 1800-as évek végén behozott pónikból."
+            }
+          },
+          {
+            "key": "registry",
+            "label": {
+              "en": "Breed club",
+              "hu": "Tenyésztőegyesület"
+            },
+            "value": {
+              "en": "The American Shetland Pony Club was established in 1888.",
+              "hu": "Az American Shetland Pony Club 1888-ban alakult."
+            }
+          },
+          {
+            "key": "types",
+            "label": {
+              "en": "Registered divisions",
+              "hu": "Nyilvántartott típusok"
+            },
+            "value": {
+              "en": "Modern, Modern Pleasure, Classic and Foundation Classic.",
+              "hu": "Modern, Modern Pleasure, Classic és Foundation Classic."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/american-shetland-pony.jpg",
+          "alt": {
+            "en": "A American Shetland Pony",
+            "hu": "Egy Amerikai shetlandi póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Montanabw",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Harness_pony.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Harness_pony.jpg",
+            "originalFilename": "Harness pony.jpg",
+            "license": {
+              "id": "CC-BY-SA-4.0",
+              "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+              "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "aspc-history",
+            "label": "American Shetland Pony Club — Our History",
+            "url": "https://www.shetlandminiature.com/our-history",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.registry",
+              "facts.types"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "welsh-mountain-pony",
+        "name": {
+          "display": {
+            "en": "Welsh Mountain Pony (Section A)",
+            "hu": "Welsh hegyi póni (A szekció)"
+          }
+        },
+        "summary": {
+          "en": "The smallest Welsh section has small pointed ears and roots in the uplands of Wales.",
+          "hu": "A legkisebb welsh szekció pónijának apró, hegyes füle van; ősei Wales hegyvidékéről származnak."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The uplands of Wales.",
+              "hu": "Wales hegyvidéke."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "WPCS Section A: no more than 121.9 cm (12 hands).",
+              "hu": "WPCS A szekció: legfeljebb 121,9 cm (12 hand)."
+            }
+          },
+          {
+            "key": "use",
+            "label": {
+              "en": "Common use",
+              "hu": "Gyakori használat"
+            },
+            "value": {
+              "en": "Riding and pony sports for young riders.",
+              "hu": "Gyermeklovaglás és pónis lovassportok."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/welsh-mountain-pony.jpg",
+          "alt": {
+            "en": "A Welsh Mountain Pony (Section A)",
+            "hu": "Egy Welsh hegyi póni (A szekció)"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "No machine-readable author provided. Hü assumed (based on copyright claims).",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:WelshPonySectionA.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/WelshPonySectionA.jpg",
+            "originalFilename": "WelshPonySectionA.jpg",
+            "license": {
+              "id": "CC-BY-SA-3.0",
+              "name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+              "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "wpcs-section-a",
+            "label": "Welsh Pony and Cob Society — Welsh Mountain Pony",
+            "url": "https://www.wpcs.uk.com/welsh-mountain-pony",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.use"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "connemara-pony",
+        "name": {
+          "display": {
+            "en": "Connemara Pony",
+            "hu": "Connemara póni"
+          }
+        },
+        "summary": {
+          "en": "A compact Irish pony whose breed standard values balance, hardiness and athletic ability.",
+          "hu": "Zömök ír póni, amelynek fajtaleírása az arányosságot, az edzettséget és a sportos mozgást hangsúlyozza."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Connemara, County Galway, on Ireland's Atlantic coast.",
+              "hu": "Connemara, Galway megye, Írország atlanti partvidéke."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "128–148 cm in the CPBS breeding programme.",
+              "hu": "A CPBS tenyésztési programja szerint 128–148 cm."
+            }
+          },
+          {
+            "key": "build",
+            "label": {
+              "en": "Build",
+              "hu": "Testfelépítés"
+            },
+            "value": {
+              "en": "A deep body on short legs, with a strong back and loins.",
+              "hu": "Mély törzs, rövid lábak, erős hát és ágyék."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/connemara-pony.jpg",
+          "alt": {
+            "en": "A Connemara Pony",
+            "hu": "Egy Connemara póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Sophiesl",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Gentle_Dancer_Irlande.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Gentle_Dancer_Irlande.jpg",
+            "originalFilename": "Gentle Dancer Irlande.jpg",
+            "license": {
+              "id": "CC-BY-SA-3.0",
+              "name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+              "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "cpbs-programme",
+            "label": "Connemara Pony Breeders' Society — Breeding Programme 2025",
+            "url": "https://cpbs.ie/site/uploads/Phils%20Uploads/The%20Connemara%20Pony%20Breeders%20Breeding%20Programme%202025.pdf",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.build"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dartmoor-pony",
+        "name": {
+          "display": {
+            "en": "Dartmoor Pony",
+            "hu": "Dartmoor póni"
+          }
+        },
+        "summary": {
+          "en": "This native Devon riding pony has a sturdy build and a full mane and tail.",
+          "hu": "Devon őshonos lovaspónija erős felépítésű, dús sörénnyel és farokkal."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Devon in south-west England.",
+              "hu": "Devon, Délnyugat-Anglia."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "Dartmoor Pony Society: no more than 127 cm (12.2 hands).",
+              "hu": "Dartmoor Pony Society: legfeljebb 127 cm (12.2 hand)."
+            }
+          },
+          {
+            "key": "identity",
+            "label": {
+              "en": "Breed identity",
+              "hu": "Fajtaazonosság"
+            },
+            "value": {
+              "en": "Not every pony living on Dartmoor is a registered Dartmoor Pony.",
+              "hu": "Nem minden Dartmoor vidékén élő póni törzskönyvezett Dartmoor póni."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/dartmoor-pony.jpg",
+          "alt": {
+            "en": "A Dartmoor Pony",
+            "hu": "Egy Dartmoor póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Nilfanion",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Dartmoor_Pony_at_Rame_Head.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Dartmoor_Pony_at_Rame_Head.jpg",
+            "originalFilename": "Dartmoor Pony at Rame Head.jpg",
+            "license": {
+              "id": "CC-BY-SA-3.0",
+              "name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+              "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "dps-breed",
+            "label": "Dartmoor Pony Society — About the Breed",
+            "url": "https://dartmoorponysociety.com/the-breed/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.identity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fell-pony",
+        "name": {
+          "display": {
+            "en": "Fell Pony",
+            "hu": "Fell póni"
+          }
+        },
+        "summary": {
+          "en": "This northern English working pony is known for a ground-covering trot and long mane and tail.",
+          "hu": "Ez az észak-angliai munkapóni térölelő ügetéséről, hosszú sörényéről és farkáról ismert."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Northern England, particularly Cumbria.",
+              "hu": "Észak-Anglia, különösen Cumbria."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "Fell Pony Society: no more than 14 hands (142.2 cm).",
+              "hu": "Fell Pony Society: legfeljebb 14 hand (142,2 cm)."
+            }
+          },
+          {
+            "key": "work",
+            "label": {
+              "en": "Traditional work",
+              "hu": "Hagyományos munka"
+            },
+            "value": {
+              "en": "Carrying goods and mineral ores; later also driving and riding.",
+              "hu": "Áruszállítás és ércfuvarozás; később fogathajtás és lovaglás is."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/fell-pony.jpg",
+          "alt": {
+            "en": "A Fell Pony",
+            "hu": "Egy Fell póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Heather Moreton",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Fellpony.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Fellpony.jpg",
+            "originalFilename": "Fellpony.jpg",
+            "license": {
+              "id": "CC-BY-2.0",
+              "name": "Creative Commons Attribution 2.0 Generic",
+              "url": "https://creativecommons.org/licenses/by/2.0/"
+            },
+            "modifications": [
+              "Converted to a delivery JPEG copy; no resizing was needed as the original was already at or below 1280 pixels."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "fps-breed",
+            "label": "Fell Pony Society — About Fell Ponies",
+            "url": "https://www.fellponysociety.org/about_breed.htm",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.work"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dales-pony",
+        "name": {
+          "display": {
+            "en": "Dales Pony",
+            "hu": "Dales póni"
+          }
+        },
+        "summary": {
+          "en": "A powerful working pony from the Yorkshire Dales, shaped by carrying loads over rough ground.",
+          "hu": "Erős munkapóni a Yorkshire Dales vidékéről; fejlődését a nehéz terepen végzett teherhordás formálta."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Yorkshire Dales, England.",
+              "hu": "Yorkshire Dales, Anglia."
+            }
+          },
+          {
+            "key": "work",
+            "label": {
+              "en": "Traditional work",
+              "hu": "Hagyományos munka"
+            },
+            "value": {
+              "en": "Pack transport, pulling carts and farm work.",
+              "hu": "Teherhordás, kocsihúzás és mezőgazdasági munka."
+            }
+          },
+          {
+            "key": "society",
+            "label": {
+              "en": "Breed society",
+              "hu": "Tenyésztőegyesület"
+            },
+            "value": {
+              "en": "The Dales Pony Society was founded in 1916.",
+              "hu": "A Dales Pony Society 1916-ban alakult."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/dales-pony.jpg",
+          "alt": {
+            "en": "A Dales Pony",
+            "hu": "Egy Dales póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "The Dales Pony Society",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Champion_Dales_Pony_Mare.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Champion_Dales_Pony_Mare.jpg",
+            "originalFilename": "Champion Dales Pony Mare.jpg",
+            "license": {
+              "id": "CC-BY-SA-4.0",
+              "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+              "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "modifications": [
+              "Converted to a delivery JPEG copy; no resizing was needed as the original was already at or below 1280 pixels."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "rbst-dales",
+            "label": "Rare Breeds Survival Trust — Dales Pony",
+            "url": "https://www.rbst.org.uk/watchlist-breed/dales-pony/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.work",
+              "facts.society"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "eriskay-pony",
+        "name": {
+          "display": {
+            "en": "Eriskay Pony",
+            "hu": "Eriskay póni"
+          }
+        },
+        "summary": {
+          "en": "An Outer Hebridean pony whose dark foal coat often gradually turns grey.",
+          "hu": "A Külső-Hebridák pónija; csikókori sötét szőre gyakran fokozatosan kiszürkül."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The Outer Hebrides of Scotland.",
+              "hu": "A skóciai Külső-Hebridák."
+            }
+          },
+          {
+            "key": "coat",
+            "label": {
+              "en": "Seasonal coat",
+              "hu": "Évszakos szőrzet"
+            },
+            "value": {
+              "en": "A coarse winter coat is replaced by a lighter summer coat.",
+              "hu": "Durva téli szőrzetét nyárra könnyebb szőrzet váltja fel."
+            }
+          },
+          {
+            "key": "studbook",
+            "label": {
+              "en": "Studbook",
+              "hu": "Törzskönyv"
+            },
+            "value": {
+              "en": "The breed's studbook of origin has been kept by Comann Each nan Eilean since 1972.",
+              "hu": "A fajta eredeti törzskönyvét 1972 óta a Comann Each nan Eilean vezeti."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/eriskay-pony.jpg",
+          "alt": {
+            "en": "A Eriskay Pony",
+            "hu": "Egy Eriskay póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Mipmapped",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Eriskay_pony_beinn_sciathan.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Eriskay_pony_beinn_sciathan.jpg",
+            "originalFilename": "Eriskay pony beinn sciathan.jpg",
+            "license": {
+              "id": "CC-BY-SA-3.0",
+              "name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+              "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "ceee-breed",
+            "label": "Comann Each nan Eilean — The Breed",
+            "url": "https://www.eriskaypony.scot/each",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.coat",
+              "facts.studbook"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "welsh-pony",
+        "name": {
+          "display": {
+            "en": "Welsh Pony (Section B)",
+            "hu": "Welsh póni (B szekció)"
+          }
+        },
+        "summary": {
+          "en": "This Welsh riding type is taller than Section A, while retaining pony character and substance.",
+          "hu": "Ez a welsh lovaspóni-típus magasabb az A szekciónál, de megőrzi pónijellegét és erőteljes felépítését."
+        },
+        "facts": [
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "UK WPCS Section B: no more than 137.2 cm (13.2 hands).",
+              "hu": "Brit WPCS B szekció: legfeljebb 137,2 cm (13.2 hand)."
+            }
+          },
+          {
+            "key": "history",
+            "label": {
+              "en": "Earlier role",
+              "hu": "Korábbi szerep"
+            },
+            "value": {
+              "en": "Bred as a strong mount for shepherds in the Welsh hills.",
+              "hu": "A walesi hegyek pásztorainak erős hátasaként tenyésztették."
+            }
+          },
+          {
+            "key": "type",
+            "label": {
+              "en": "Type",
+              "hu": "Típus"
+            },
+            "value": {
+              "en": "The standard emphasises riding action, adequate bone and hardiness.",
+              "hu": "A fajtaleírás a lovaglásra alkalmas mozgást, az erős csontozatot és az edzettséget hangsúlyozza."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/welsh-pony.jpg",
+          "alt": {
+            "en": "A Welsh Pony (Section B)",
+            "hu": "Egy Welsh póni (B szekció)"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Tsaag Valren",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Orielton_Martina_03.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Orielton_Martina_03.jpg",
+            "originalFilename": "Orielton Martina 03.jpg",
+            "license": {
+              "id": "CC-BY-SA-4.0",
+              "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+              "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "wpcs-section-b",
+            "label": "Welsh Pony and Cob Society — Welsh Pony, Section B",
+            "url": "https://www.wpcs.uk.com/welsh-pony-1",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.height",
+              "facts.history",
+              "facts.type"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "new-forest-pony",
+        "name": {
+          "display": {
+            "en": "New Forest Pony",
+            "hu": "New Forest póni"
+          }
+        },
+        "summary": {
+          "en": "A working-type pony with strong quarters and hard, round hooves.",
+          "hu": "Munkatípusú póni erős farral és kemény, kerek patákkal."
+        },
+        "facts": [
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "The breed society sets a maximum of 148 cm, with no lower limit.",
+              "hu": "A tenyésztőegyesület 148 cm-es felső határt ír elő, alsó határ nélkül."
+            }
+          },
+          {
+            "key": "movement",
+            "label": {
+              "en": "Movement",
+              "hu": "Mozgás"
+            },
+            "value": {
+              "en": "Free, active and straight, without exaggerated action.",
+              "hu": "Szabad, élénk és egyenes, túlzott lábemelés nélkül."
+            }
+          },
+          {
+            "key": "colour",
+            "label": {
+              "en": "A coat detail",
+              "hu": "Egy színváltozat"
+            },
+            "value": {
+              "en": "Buckskin is permitted under the society's single-cream-gene rules.",
+              "hu": "A fakó szín megengedett az egyesület egyetlen krémgénváltozatra vonatkozó szabályai szerint."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/new-forest-pony.jpg",
+          "alt": {
+            "en": "A New Forest Pony",
+            "hu": "Egy New Forest póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Paula Jantunen",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Buckskin_New_Forest_pony.JPG",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Buckskin_New_Forest_pony.JPG",
+            "originalFilename": "Buckskin New Forest pony.JPG",
+            "license": {
+              "id": "PD",
+              "name": "Public Domain"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "nf-standard",
+            "label": "New Forest Pony Breeding and Cattle Society — Breed Description (January 2021)",
+            "url": "https://www.newforestpony.com/wp-content/uploads/2021/01/Breed-Description-2021-Seperate-Doc.pdf",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.height",
+              "facts.movement",
+              "facts.colour"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "exmoor-pony",
+        "name": {
+          "display": {
+            "en": "Exmoor Pony",
+            "hu": "Exmoor póni"
+          }
+        },
+        "summary": {
+          "en": "Look for the pale muzzle and the prominent hood above each eye.",
+          "hu": "Figyeld meg a világos pofát és a szemek fölötti jellegzetes, kiemelkedő szemhéjrészt!"
+        },
+        "facts": [
+          {
+            "key": "coat",
+            "label": {
+              "en": "Winter coat",
+              "hu": "Téli szőrzet"
+            },
+            "value": {
+              "en": "Two layers: a fine insulating undercoat and a water-resistant outer coat.",
+              "hu": "Két réteg: finom, hőszigetelő aljszőr és víztaszító fedőszőr."
+            }
+          },
+          {
+            "key": "markings",
+            "label": {
+              "en": "Markings",
+              "hu": "Jegyek"
+            },
+            "value": {
+              "en": "The Exmoor Pony Society breed standard excludes white markings.",
+              "hu": "Az Exmoor Pony Society fajtaleírása kizárja a fehér jegyeket."
+            }
+          },
+          {
+            "key": "movement",
+            "label": {
+              "en": "Movement",
+              "hu": "Mozgás"
+            },
+            "value": {
+              "en": "The standard calls for smooth, straight movement without exaggeration.",
+              "hu": "A fajtaleírás egyenletes, egyenes mozgást kíván meg, túlzás nélkül."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/exmoor-pony.jpg",
+          "alt": {
+            "en": "A Exmoor Pony",
+            "hu": "Egy Exmoor póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Dominicus Johannes Bergsma",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Delleboersterheide,_natuurgebied_van_het_It_Fryske_Gea._(d.j.b)_20.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Delleboersterheide%2C_natuurgebied_van_het_It_Fryske_Gea._%28d.j.b%29_20.jpg",
+            "originalFilename": "Delleboersterheide, natuurgebied van het It Fryske Gea. (d.j.b) 20.jpg",
+            "license": {
+              "id": "CC-BY-SA-4.0",
+              "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+              "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "eps-standard",
+            "label": "Exmoor Pony Society — Breed Standard",
+            "url": "https://www.exmoorponysociety.org.uk/fileadmin/user_upload/file_collections/showdocuments/Breed_Standard.pdf",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.coat",
+              "facts.markings",
+              "facts.movement"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "highland-pony",
+        "name": {
+          "display": {
+            "en": "Highland Pony",
+            "hu": "Highland póni"
+          }
+        },
+        "summary": {
+          "en": "A strong Scottish pony with a dense winter undercoat beneath tougher outer hair.",
+          "hu": "Erős skót póni, amelynek durvább fedőszőre alatt télen sűrű aljszőr nő."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The Scottish Highlands and islands.",
+              "hu": "A Skót-felföld és a skót szigetek."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "Highland Pony Society: no more than 148 cm (14.2 hands).",
+              "hu": "Highland Pony Society: legfeljebb 148 cm (14.2 hand)."
+            }
+          },
+          {
+            "key": "use",
+            "label": {
+              "en": "Uses",
+              "hu": "Használat"
+            },
+            "value": {
+              "en": "Riding, driving and carrying packs.",
+              "hu": "Lovaglás, fogathajtás és teherhordás."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/highland-pony.jpg",
+          "alt": {
+            "en": "A Highland Pony",
+            "hu": "Egy Highland póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Confuslefu at English Wikipedia",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Gracie-rhs2005.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Gracie-rhs2005.jpg",
+            "originalFilename": "Gracie-rhs2005.jpg",
+            "license": {
+              "id": "PD",
+              "name": "Public Domain"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "hps-standard",
+            "label": "Highland Pony Society — Breed Description",
+            "url": "https://www.highlandponysociety.com/hps/the-society/breed-description/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.use"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kerry-bog-pony",
+        "name": {
+          "display": {
+            "en": "Kerry Bog Pony",
+            "hu": "Kerry Bog póni"
+          }
+        },
+        "summary": {
+          "en": "A small Irish working pony once used to bring turf home from the bogs.",
+          "hu": "Kicsi ír munkapóni, amellyel egykor tőzeget hordtak haza a lápokról."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The bogs and small farms of County Kerry, Ireland.",
+              "hu": "Az írországi Kerry megye lápjai és kisgazdaságai."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "HSI standard: mares 102–112 cm; stallions and geldings 102–117 cm.",
+              "hu": "HSI-előírás: kancák 102–112 cm; mének és heréltek 102–117 cm."
+            }
+          },
+          {
+            "key": "work",
+            "label": {
+              "en": "Other traditional work",
+              "hu": "További hagyományos munka"
+            },
+            "value": {
+              "en": "Taking milk to creameries and bringing in seaweed.",
+              "hu": "Tejszállítás a tejfeldolgozókhoz és tengeri hínár behordása."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/kerry-bog-pony.jpg",
+          "alt": {
+            "en": "A Kerry Bog Pony",
+            "hu": "Egy Kerry Bog póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Joye~",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bog_Pony.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Bog_Pony.jpg",
+            "originalFilename": "Bog Pony.jpg",
+            "license": {
+              "id": "CC-BY-2.0",
+              "name": "Creative Commons Attribution 2.0 Generic",
+              "url": "https://creativecommons.org/licenses/by/2.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "hsi-kerry",
+            "label": "Horse Sport Ireland — Kerry Bog Pony Studbook",
+            "url": "https://www.horsesportireland.ie/studbooks/kerry-bog-pony-studbook/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.work"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "gotland-pony",
+        "name": {
+          "display": {
+            "en": "Gotland Pony",
+            "hu": "Gotlandi póni"
+          }
+        },
+        "summary": {
+          "en": "Also called the Gotlandsruss, this Swedish pony is used for riding, driving and pony trotting.",
+          "hu": "Gotlandsruss néven is ismert svéd póni, amelyet lovaglásra, fogathajtásra és póniügetésre is használnak."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The Swedish island of Gotland.",
+              "hu": "A svédországi Gotland szigete."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height range",
+              "hu": "Marmagassági tartomány"
+            },
+            "value": {
+              "en": "NordGen gives a withers-height range of 115–130 cm.",
+              "hu": "A NordGen 115–130 cm-es marmagassági tartományt ad meg."
+            }
+          },
+          {
+            "key": "heritage",
+            "label": {
+              "en": "Heritage",
+              "hu": "Örökség"
+            },
+            "value": {
+              "en": "Sweden's only native pony breed, according to NordGen.",
+              "hu": "A NordGen szerint Svédország egyetlen őshonos pónifajtája."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/gotland-pony.jpg",
+          "alt": {
+            "en": "A Gotland Pony",
+            "hu": "Egy Gotlandi póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Sallis Lindqvist",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Gotlandsruss.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Gotlandsruss.jpg",
+            "originalFilename": "Gotlandsruss.jpg",
+            "license": {
+              "id": "CC-BY-SA-3.0",
+              "name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+              "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "modifications": [
+              "Converted to a delivery JPEG copy; no resizing was needed as the original was already at or below 1280 pixels."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "nordgen-gotland",
+            "label": "NordGen — Gotlandsruss",
+            "url": "https://www.nordgen.org/sv/vart-arbete/husdjur/nordiska-lantrasdjur/gotlandsruss/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.heritage"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "german-riding-pony",
+        "name": {
+          "display": {
+            "en": "German Riding Pony",
+            "hu": "Német lovaspóni"
+          }
+        },
+        "summary": {
+          "en": "An athletic riding pony bred for both leisure and sport, including dressage and jumping.",
+          "hu": "Sportos lovaspóni, amelyet szabadidős lovaglásra és sportra, például díjlovaglásra és díjugratásra tenyésztenek."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Germany.",
+              "hu": "Németország."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height guideline",
+              "hu": "Marmagassági irányérték"
+            },
+            "value": {
+              "en": "Westfalen's breeding programme: approximately 138–148 cm.",
+              "hu": "A Westfalen tenyésztési programja szerint körülbelül 138–148 cm."
+            }
+          },
+          {
+            "key": "use",
+            "label": {
+              "en": "Sporting uses",
+              "hu": "Sportcélú használat"
+            },
+            "value": {
+              "en": "Dressage, jumping and eventing; also suitable for driving.",
+              "hu": "Díjlovaglás, díjugratás és lovastusa; fogathajtásra is alkalmas."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/german-riding-pony.jpg",
+          "alt": {
+            "en": "A German Riding Pony",
+            "hu": "Egy Német lovaspóni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Sara Landvogt",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Reitpony_Wallach.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Deutsches_Reitpony_Wallach.jpg",
+            "originalFilename": "Deutsches Reitpony Wallach.jpg",
+            "license": {
+              "id": "CC-BY-SA-3.0",
+              "name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+              "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "westfalen-grp",
+            "label": "Westfalen Verband North America — German Riding Pony Breeding Programme (May 2020)",
+            "url": "https://westfalenverband.com/documents/GRPbylaws.pdf",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.use"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pottok",
+        "name": {
+          "display": {
+            "en": "Pottok",
+            "hu": "Pottok"
+          }
+        },
+        "summary": {
+          "en": "A hardy Basque Country pony, recognised in a free-ranging mountain type and a taller plains type.",
+          "hu": "Edzett baszkföldi póni; a törzskönyv egy szabadon élő hegyi és egy magasabb síksági típust ismer el."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The Basque Country of France and Spain, around the western Pyrenees.",
+              "hu": "A francia és spanyol Baszkföld, a Nyugat-Pireneusok vidéke."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "The French stud-book sets 1.15–1.32 m for the Mountain type and 1.20–1.47 m for the taller Plains type.",
+              "hu": "A francia törzskönyv a hegyi típusnál 1,15–1,32 m-t, a magasabb síksági típusnál 1,20–1,47 m-t ír elő."
+            }
+          },
+          {
+            "key": "registry",
+            "label": {
+              "en": "Official recognition",
+              "hu": "Hivatalos elismerés"
+            },
+            "value": {
+              "en": "France officially recognised the Pottok as a breed in 1972.",
+              "hu": "Franciaország 1972-ben ismerte el hivatalosan önálló fajtaként."
+            }
+          },
+          {
+            "key": "lifestyle",
+            "label": {
+              "en": "Traditional lifestyle",
+              "hu": "Hagyományos életmód"
+            },
+            "value": {
+              "en": "Registered Mountain-type Pottoks live free-ranging in herds for at least nine months of the year.",
+              "hu": "A hegyi típusú, törzskönyvezett pottokok az év legalább kilenc hónapjában szabadon, ménesben élnek."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/pottok.jpg",
+          "alt": {
+            "en": "A Pottok",
+            "hu": "Egy Pottok"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Lankide Gorritxiki",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Pootok_arra_Orbelaunen.JPG",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Pootok_arra_Orbelaunen.JPG",
+            "originalFilename": "Pootok arra Orbelaunen.JPG",
+            "license": {
+              "id": "CC-BY-SA-3.0",
+              "name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+              "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "ifce-pottok",
+            "label": "IFCE Équipédia — Pottok",
+            "url": "https://equipedia.ifce.fr/elevage-et-entretien/race-et-robe/races-dequides-et-stud-book/pottok",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.registry",
+              "facts.lifestyle"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "asturcon",
+        "name": {
+          "display": {
+            "en": "Asturcón",
+            "hu": "Asturcón"
+          }
+        },
+        "summary": {
+          "en": "A small pony from the mountains of Asturias in northern Spain, traditionally valued for its smooth natural gait.",
+          "hu": "Kicsi póni Spanyolország északi részéből, Asztúria hegyvidékéről; hagyományosan a természetes, könnyed járásáért becsülték."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The mountains of Asturias, northern Spain.",
+              "hu": "Spanyolország északi részének hegyvidéke, Asztúria."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "Spain's official native-breed programme for the Asturcón sets a height range of about 130–147 cm.",
+              "hu": "Spanyolország hivatalos őshonosfajta-programja az asturcón számára mintegy 130–147 cm-es marmagasságot ír elő."
+            }
+          },
+          {
+            "key": "gait",
+            "label": {
+              "en": "Traditional trait",
+              "hu": "Hagyományos jellemző"
+            },
+            "value": {
+              "en": "Historically prized for the andadura, a natural ambling gait.",
+              "hu": "Történetileg az andadura, egy természetes, könnyed poroszkálásért volt híres."
+            }
+          },
+          {
+            "key": "registry",
+            "label": {
+              "en": "Breed association",
+              "hu": "Tenyésztőegyesület"
+            },
+            "value": {
+              "en": "ACPRA, founded in 1987, keeps the breed's genealogical book.",
+              "hu": "Az 1987-ben alapított ACPRA vezeti a fajta törzskönyvét."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/asturcon.jpg",
+          "alt": {
+            "en": "A Asturcón",
+            "hu": "Egy Asturcón"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Ramón from Llanera, España",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Asturcon.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Asturcon.jpg",
+            "originalFilename": "Asturcon.jpg",
+            "license": {
+              "id": "CC-BY-SA-2.0",
+              "name": "Creative Commons Attribution-ShareAlike 2.0 Generic",
+              "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "mapa-asturcon",
+            "label": "Spain, Ministry of Agriculture (MAPA) — Asturcón breeding programme, Official Catalogue of Endangered Native Breeds",
+            "url": "https://www.mapa.gob.es/dam/mapa/contenido/ganaderia/temas/zootecnia/arca/razas/catalogo/raza-autoctona-en-peligro-de-extincion/equino-caballar/asturcon/documentacion/resolucion010621250621programadecriaacpramsg.pdf",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.gait",
+              "facts.registry"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "garrano",
+        "name": {
+          "display": {
+            "en": "Garrano",
+            "hu": "Garrano"
+          }
+        },
+        "summary": {
+          "en": "A small, agile mountain pony from northern Portugal, traditionally used as a pack and farm animal.",
+          "hu": "Kicsi, fürge hegyi póni Portugália északi részéből; hagyományosan csomagszállításra és mezőgazdasági munkára használták."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The mountains of northern Portugal, especially around Peneda-Gerês.",
+              "hu": "Portugália északi hegyvidéke, különösen a Peneda-Gerês térsége."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "The official breed standard sets about 128 cm for males and 120 cm for females.",
+              "hu": "A hivatalos fajtaleírás körülbelül 128 cm-t ír elő kancméneknek és 120 cm-t kancáknak."
+            }
+          },
+          {
+            "key": "registry",
+            "label": {
+              "en": "Official recognition",
+              "hu": "Hivatalos elismerés"
+            },
+            "value": {
+              "en": "Recognised by Portugal's veterinary authority (DGAV) as an autochthonous breed.",
+              "hu": "Portugália állategészségügyi hatósága (DGAV) őshonos fajtaként ismeri el."
+            }
+          },
+          {
+            "key": "use",
+            "label": {
+              "en": "Traditional use",
+              "hu": "Hagyományos használat"
+            },
+            "value": {
+              "en": "Pack transport and farm work in steep terrain; today also riding and trekking.",
+              "hu": "Csomagszállítás és mezőgazdasági munka meredek terepen; ma lovaglásra és túrázásra is használják."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/garrano.jpg",
+          "alt": {
+            "en": "A Garrano",
+            "hu": "Egy Garrano"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Maria Lemos from Porto, Portugal",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Garrano-02.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Garrano-02.jpg",
+            "originalFilename": "Garrano-02.jpg",
+            "license": {
+              "id": "CC-BY-SA-2.0",
+              "name": "Creative Commons Attribution-ShareAlike 2.0 Generic",
+              "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "dgav-garrano",
+            "label": "Portugal, Direção-Geral de Alimentação e Veterinária (DGAV) — Garrano",
+            "url": "https://www.dgav.pt/animais/conteudo/recursos-geneticos-animais/racas-autoctones/equideos/garrano/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.registry",
+              "facts.use"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "faroe-pony",
+        "name": {
+          "display": {
+            "en": "Faroe Pony",
+            "hu": "Feröeri póni"
+          }
+        },
+        "summary": {
+          "en": "A rare, small pony native to the Faroe Islands, once used to carry peat and hay across steep ground.",
+          "hu": "Ritka, kis termetű, a Feröer-szigetek őshonos pónija; egykor tőzeget és szénát hordtak vele meredek terepen."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The Faroe Islands, in the North Atlantic between Iceland and Norway.",
+              "hu": "A Feröer-szigetek, az Izland és Norvégia közötti Észak-Atlanti-óceánban."
+            }
+          },
+          {
+            "key": "conservation",
+            "label": {
+              "en": "Conservation status",
+              "hu": "Védettségi helyzet"
+            },
+            "value": {
+              "en": "Numbers fell to only a handful of animals in the 1960s before a dedicated breeding effort rebuilt the population.",
+              "hu": "Az állomány az 1960-as években néhány egyedre apadt, mielőtt egy célzott tenyésztési program újraépítette azt."
+            }
+          },
+          {
+            "key": "build",
+            "label": {
+              "en": "Build",
+              "hu": "Testfelépítés"
+            },
+            "value": {
+              "en": "A compact, sturdy build suited to the islands' steep, wet terrain.",
+              "hu": "Zömök, erős testfelépítés, amely alkalmas a szigetek meredek, nedves terepéhez."
+            }
+          },
+          {
+            "key": "use",
+            "label": {
+              "en": "Traditional use",
+              "hu": "Hagyományos használat"
+            },
+            "value": {
+              "en": "Carrying peat, hay and other loads before mechanisation.",
+              "hu": "A gépesítés előtt tőzeg, széna és egyéb terhek szállítására használták."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/faroe-pony.jpg",
+          "alt": {
+            "en": "A Faroe Pony",
+            "hu": "Egy Feröeri póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Klara Christiansen - Faroe Islands",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Grani1.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Grani1.jpg",
+            "originalFilename": "Grani1.jpg",
+            "license": {
+              "id": "CC-BY-3.0",
+              "name": "Creative Commons Attribution 3.0 Unported",
+              "url": "https://creativecommons.org/licenses/by/3.0/"
+            },
+            "modifications": [
+              "Converted to a delivery JPEG copy; no resizing was needed as the original was already at or below 1280 pixels."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "faroe-pony-society",
+            "label": "Faroese Pony Society — Grani/Føroysk Ross breed information",
+            "url": "https://en.wikipedia.org/wiki/Faroe_pony",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.conservation",
+              "facts.build",
+              "facts.use"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pony-of-the-americas",
+        "name": {
+          "display": {
+            "en": "Pony of the Americas",
+            "hu": "Pony of the Americas"
+          }
+        },
+        "summary": {
+          "en": "A spotted riding pony developed in the United States in 1954, popular with young riders.",
+          "hu": "Az Egyesült Államokban 1954-ben kialakított tarka lovaspóni, amelyet szívesen lovagolnak fiatal lovasok."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Developed in Iowa, USA, in 1954 from an Arabian–Appaloosa–Shetland cross.",
+              "hu": "Az USA-beli Iowában alakították ki 1954-ben egy arab–appaloosa–shetlandi keresztezésből."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "The Pony of the Americas Club sets a range of 46 to 56 inches (about 117–142 cm).",
+              "hu": "A Pony of the Americas Club 46–56 hüvelykes (kb. 117–142 cm-es) marmagasságot ír elő."
+            }
+          },
+          {
+            "key": "coat",
+            "label": {
+              "en": "Coat pattern",
+              "hu": "Szőrmintázat"
+            },
+            "value": {
+              "en": "Valued for Appaloosa-type spotted coat patterns.",
+              "hu": "Az appaloosa jellegű, tarka szőrmintázatáért kedvelik."
+            }
+          },
+          {
+            "key": "use",
+            "label": {
+              "en": "Common use",
+              "hu": "Gyakori használat"
+            },
+            "value": {
+              "en": "Bred specifically as a youth riding and show pony.",
+              "hu": "Kifejezetten fiatal lovasok lovaglására és kiállítási célra tenyésztik."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/pony-of-the-americas.jpg",
+          "alt": {
+            "en": "A Pony of the Americas",
+            "hu": "Egy Pony of the Americas"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Rene Turnbull",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Foreva_Bling_it_On_aka_Jackson.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Foreva_Bling_it_On_aka_Jackson.jpg",
+            "originalFilename": "Foreva Bling it On aka Jackson.jpg",
+            "license": {
+              "id": "CC-BY-4.0",
+              "name": "Creative Commons Attribution 4.0 International",
+              "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "poac-history",
+            "label": "Pony of the Americas Club — Breed History",
+            "url": "https://www.poac.org/breed/history",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.coat",
+              "facts.use"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "chincoteague-pony",
+        "name": {
+          "display": {
+            "en": "Chincoteague Pony",
+            "hu": "Chincoteague-póni"
+          }
+        },
+        "summary": {
+          "en": "A feral pony living on Assateague Island off the coast of Virginia and Maryland.",
+          "hu": "Vadon élő póni a virginiai és marylandi partok mentén fekvő Assateague-szigeten."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Assateague Island, on the Atlantic coast of the United States.",
+              "hu": "Assateague-sziget, az Egyesült Államok atlanti partvidékén."
+            }
+          },
+          {
+            "key": "management",
+            "label": {
+              "en": "Herd management",
+              "hu": "Ménesgondozás"
+            },
+            "value": {
+              "en": "The Virginia herd is owned by the Chincoteague Volunteer Fire Company and managed within a national wildlife refuge; the Maryland herd is managed by the National Park Service.",
+              "hu": "A virginiai ménest a Chincoteague Volunteer Fire Company birtokolja egy nemzeti vadrezervátumban; a marylandi ménest a Nemzeti Parkszolgálat kezeli."
+            }
+          },
+          {
+            "key": "status",
+            "label": {
+              "en": "Population status",
+              "hu": "Állományi helyzet"
+            },
+            "value": {
+              "en": "Classified by the National Park Service as a feral, not truly wild, population descended from domestic stock.",
+              "hu": "A Nemzeti Parkszolgálat elvadult, nem valódi vadon élő, háziasított eredetű állományként sorolja be."
+            }
+          },
+          {
+            "key": "tradition",
+            "label": {
+              "en": "Local tradition",
+              "hu": "Helyi hagyomány"
+            },
+            "value": {
+              "en": "Famous for the annual Pony Swim and auction on Chincoteague Island.",
+              "hu": "Híres az évenkénti pónyúsztatásról és aukcióról Chincoteague szigetén."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/chincoteague-pony.jpg",
+          "alt": {
+            "en": "A Chincoteague Pony",
+            "hu": "Egy Chincoteague-póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Mbinebri / Matthew Binebrink",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Virginia_Chincoteague_Ponies.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Virginia_Chincoteague_Ponies.jpg",
+            "originalFilename": "Virginia Chincoteague Ponies.jpg",
+            "license": {
+              "id": "CC-BY-SA-4.0",
+              "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+              "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "nps-assateague-horses",
+            "label": "U.S. National Park Service — Assateague Island National Seashore: Wild Horses",
+            "url": "https://www.nps.gov/asis/learn/nature/horses.htm",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.management",
+              "facts.status",
+              "facts.tradition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "newfoundland-pony",
+        "name": {
+          "display": {
+            "en": "Newfoundland Pony",
+            "hu": "Új-Fundlandi póni"
+          }
+        },
+        "summary": {
+          "en": "A critically endangered Canadian pony shaped by generations of hard work on small Newfoundland farms.",
+          "hu": "Kritikusan veszélyeztetett kanadai póni, amelyet nemzedékeken át tartó kemény munka formált az új-fundlandi kisgazdaságokban."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The island of Newfoundland, Canada, from ponies brought over by British and Irish settlers.",
+              "hu": "A kanadai Új-Fundland szigete, brit és ír telepesek által odahozott pónikból."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height range",
+              "hu": "Marmagassági tartomány"
+            },
+            "value": {
+              "en": "The breed standard allows a range of about 11.0 to 14.2 hands (roughly 112–145 cm).",
+              "hu": "A fajtaleírás körülbelül 11.0–14.2 hand (nagyjából 112–145 cm) tartományt enged meg."
+            }
+          },
+          {
+            "key": "legal",
+            "label": {
+              "en": "Legal protection",
+              "hu": "Jogi védelem"
+            },
+            "value": {
+              "en": "Protected since 1997 under Newfoundland and Labrador's Heritage Animals Act.",
+              "hu": "1997 óta védi Új-Fundland és Labrador Heritage Animals Act nevű törvénye."
+            }
+          },
+          {
+            "key": "conservation",
+            "label": {
+              "en": "Conservation status",
+              "hu": "Védettségi helyzet"
+            },
+            "value": {
+              "en": "Classified as critically endangered, with only a few hundred ponies remaining.",
+              "hu": "Kritikusan veszélyeztetettként tartják számon, mindössze néhány száz egyeddel."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/newfoundland-pony.jpg",
+          "alt": {
+            "en": "A Newfoundland Pony",
+            "hu": "Egy Új-Fundlandi póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "kaplanmyrth",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Newfoundland_Ponies.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Newfoundland_Ponies.jpg",
+            "originalFilename": "Newfoundland Ponies.jpg",
+            "license": {
+              "id": "CC-BY-SA-2.0",
+              "name": "Creative Commons Attribution-ShareAlike 2.0 Generic",
+              "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "newfoundland-pony-society",
+            "label": "Newfoundland Pony Society — About the Newfoundland Pony",
+            "url": "https://newfoundlandpony.com/about-the-newfoundland-pony/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.legal",
+              "facts.conservation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lac-la-croix-pony",
+        "name": {
+          "display": {
+            "en": "Lac La Croix Indigenous Pony",
+            "hu": "Lac La Croix őslakos póni"
+          }
+        },
+        "summary": {
+          "en": "A small horse bred by the Ojibwe people, saved from near-extinction by just four remaining mares in the 1970s.",
+          "hu": "Az odzsibve nép által tenyésztett kis termetű ló, amelyet az 1970-es években már csak négy megmaradt kanca mentett meg a kihalástól."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Developed by the Ojibwe people around Lac La Croix, northwestern Ontario, Canada.",
+              "hu": "Az odzsibve nép alakította ki Lac La Croix környékén, Ontario északnyugati részén, Kanadában."
+            }
+          },
+          {
+            "key": "history",
+            "label": {
+              "en": "Near-extinction",
+              "hu": "Csaknem kihalt"
+            },
+            "value": {
+              "en": "By 1977 only four mares remained; the breed was saved by crossing them with Spanish Mustang stallions.",
+              "hu": "1977-re már csak négy kanca maradt; a fajtát spanyol musztáng ménekkel való keresztezéssel mentették meg."
+            }
+          },
+          {
+            "key": "use",
+            "label": {
+              "en": "Traditional use",
+              "hu": "Hagyományos használat"
+            },
+            "value": {
+              "en": "Used by the Ojibwe as winter transport, running trap lines and hauling loads.",
+              "hu": "Az odzsibvék télen közlekedésre, csapdavonalak bejárására és teherhúzásra használták."
+            }
+          },
+          {
+            "key": "conservation",
+            "label": {
+              "en": "Conservation status",
+              "hu": "Védettségi helyzet"
+            },
+            "value": {
+              "en": "Considered the only horse breed developed by Indigenous people in Canada; still critically endangered.",
+              "hu": "Az egyetlen olyan lófajtának tartják, amelyet őslakos nép alakított ki Kanadában; állománya továbbra is kritikusan veszélyeztetett."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/lac-la-croix-pony.jpg",
+          "alt": {
+            "en": "A Lac La Croix Indigenous Pony",
+            "hu": "Egy Lac La Croix őslakos póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Llcips09",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Agawate.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Agawate.jpg",
+            "originalFilename": "Agawate.jpg",
+            "license": {
+              "id": "CC-BY-SA-4.0",
+              "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+              "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "modifications": [
+              "Converted to a delivery JPEG copy; no resizing was needed as the original was already at or below 1280 pixels."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "ojibwe-horse-society",
+            "label": "Ojibwe Horse Society — About the Breed",
+            "url": "https://ojibwehorse.ca/about-the-breed/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.history",
+              "facts.use",
+              "facts.conservation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hackney-pony",
+        "name": {
+          "display": {
+            "en": "Hackney Pony",
+            "hu": "Hackney póni"
+          }
+        },
+        "summary": {
+          "en": "A high-stepping British harness pony bred from Hackney Horse and Fell Pony stock.",
+          "hu": "Magas lábemeléssel hajtott brit fogatpóni, amelyet hackney lovak és fell pónik keresztezéséből tenyésztettek ki."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Great Britain, developed in the late 1800s from Hackney Horse and Fell Pony bloodlines.",
+              "hu": "Nagy-Britannia; az 1800-as évek végén hackney lovak és fell pónik vérvonalaiból alakították ki."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height range",
+              "hu": "Marmagassági tartomány"
+            },
+            "value": {
+              "en": "The Hackney Horse Society's standard places the pony type at roughly 12.2 to 14 hands.",
+              "hu": "A Hackney Horse Society fajtaleírása a póni típust körülbelül 12.2–14 hand tartományba sorolja."
+            }
+          },
+          {
+            "key": "gait",
+            "label": {
+              "en": "Distinctive gait",
+              "hu": "Jellegzetes járás"
+            },
+            "value": {
+              "en": "Known for a spectacular, high-stepping trot used in harness classes.",
+              "hu": "Látványos, magas lábemelésű ügetéséről ismert, amelyet fogathajtó versenyeken mutatnak be."
+            }
+          },
+          {
+            "key": "use",
+            "label": {
+              "en": "Common use",
+              "hu": "Gyakori használat"
+            },
+            "value": {
+              "en": "Bred and shown almost exclusively in harness rather than under saddle.",
+              "hu": "Szinte kizárólag fogatban tenyésztik és mutatják be, nyeregben ritkán."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/hackney-pony.jpg",
+          "alt": {
+            "en": "A Hackney Pony",
+            "hu": "Egy Hackney póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Just chaos",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Hackney_Pony3.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Hackney_Pony3.jpg",
+            "originalFilename": "Hackney Pony3.jpg",
+            "license": {
+              "id": "CC-BY-2.0",
+              "name": "Creative Commons Attribution 2.0 Generic",
+              "url": "https://creativecommons.org/licenses/by/2.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "hackney-horse-society",
+            "label": "Hackney Horse Society — Breed Standard",
+            "url": "https://hackney-horse.org.uk/breed-standard/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.gait",
+              "facts.use"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "australian-riding-pony",
+        "name": {
+          "display": {
+            "en": "Australian Riding Pony",
+            "hu": "Ausztrál lovaspóni"
+          }
+        },
+        "summary": {
+          "en": "A refined Australian show pony bred from British Riding Pony, Arabian and Thoroughbred bloodlines.",
+          "hu": "Finom felépítésű ausztrál kiállítási póni, amelyet brit lovaspóni, arab és telivér vérvonalak keresztezéséből tenyésztettek."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Australia, developed since the 1970s.",
+              "hu": "Ausztrália; az 1970-es évek óta alakítják ki."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "The Riding Pony Stud Book Society sets a range of 12.2 to 14.2 hands (about 127–147 cm).",
+              "hu": "A Riding Pony Stud Book Society 12.2–14.2 hand (kb. 127–147 cm) tartományt ír elő."
+            }
+          },
+          {
+            "key": "movement",
+            "label": {
+              "en": "Movement",
+              "hu": "Mozgás"
+            },
+            "value": {
+              "en": "Valued for free-flowing, elegant movement rather than exaggerated action.",
+              "hu": "Szabad, elegáns mozgásáért becsülik, túlzott lábemelés nélkül."
+            }
+          },
+          {
+            "key": "use",
+            "label": {
+              "en": "Common use",
+              "hu": "Gyakori használat"
+            },
+            "value": {
+              "en": "Bred mainly as a show and hack pony for young riders.",
+              "hu": "Elsősorban fiatal lovasok kiállítási és hack pónijaként tenyésztik."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/australian-riding-pony.jpg",
+          "alt": {
+            "en": "A Australian Riding Pony",
+            "hu": "Egy Ausztrál lovaspóni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Cgoodwin",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:AusRidingPony.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/AusRidingPony.jpg",
+            "originalFilename": "AusRidingPony.jpg",
+            "license": {
+              "id": "CC-BY-SA-3.0",
+              "name": "Creative Commons Attribution-ShareAlike 3.0 Unported",
+              "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+            },
+            "modifications": [
+              "Converted to a delivery JPEG copy; no resizing was needed as the original was already at or below 1280 pixels."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "rpsbs-breed-standard",
+            "label": "Riding Pony Stud Book Society Ltd (Australia) — Breed Standard",
+            "url": "https://www.rpsbs.com.au/breed-standard/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.movement",
+              "facts.use"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "timor-pony",
+        "name": {
+          "display": {
+            "en": "Timor Pony",
+            "hu": "Timori póni"
+          }
+        },
+        "summary": {
+          "en": "A small, sturdy pony from the island of Timor, used for riding, driving and light farm work.",
+          "hu": "Kicsi, edzett póni Timor szigetéről, amelyet lovaglásra, fogathajtásra és könnyebb mezőgazdasági munkára használnak."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The island of Timor, in Timor-Leste and Indonesia.",
+              "hu": "Timor szigete, Kelet-Timoron és Indonézián."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "Registries cap the height at about 12.2 hands (approximately 127 cm).",
+              "hu": "A törzskönyvek körülbelül 12.2 hand (mintegy 127 cm) felső határt írnak elő."
+            }
+          },
+          {
+            "key": "build",
+            "label": {
+              "en": "Build",
+              "hu": "Testfelépítés"
+            },
+            "value": {
+              "en": "A narrow frame with a short back, muscular neck and sloping croup, suited to hilly terrain.",
+              "hu": "Keskeny testalkat, rövid hát, izmos nyak és lejtős far, ami hegyes-dombos terephez illik."
+            }
+          },
+          {
+            "key": "use",
+            "label": {
+              "en": "Common use",
+              "hu": "Gyakori használat"
+            },
+            "value": {
+              "en": "Riding, driving, light farm work and moving cattle.",
+              "hu": "Lovaglás, fogathajtás, könnyebb mezőgazdasági munka és jószágterelés."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/timor-pony.jpg",
+          "alt": {
+            "en": "A Timor Pony",
+            "hu": "Egy Timori póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Serviços Relações Públicas",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:2017-11-26_Timor-Pony_bei_der_UPF.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/2017-11-26_Timor-Pony_bei_der_UPF.jpg",
+            "originalFilename": "2017-11-26 Timor-Pony bei der UPF.jpg",
+            "license": {
+              "id": "PD",
+              "name": "Public Domain"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "apsb-timor-pony",
+            "label": "Australian Pony Stud Book Society — Timor Pony",
+            "url": "https://apsb.asn.au/breeds/apsb-timor-pony/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.build",
+              "facts.use"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "manipuri-pony",
+        "name": {
+          "display": {
+            "en": "Manipuri Pony",
+            "hu": "Manipuri póni"
+          }
+        },
+        "summary": {
+          "en": "A small, agile pony from north-eastern India, historically the mount used in Manipur's traditional polo.",
+          "hu": "Kicsi, fürge póni Északkelet-Indiából, amelyet történelmileg a Manipurban honos hagyományos póló hátaslovaként használtak."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Manipur and neighbouring states in north-eastern India.",
+              "hu": "Manipur és a szomszédos államok Északkelet-Indiában."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height range",
+              "hu": "Marmagassági tartomány"
+            },
+            "value": {
+              "en": "Typically stands about 122–132 cm, with some individuals reaching 136 cm.",
+              "hu": "Jellemzően 122–132 cm marmagasságú, egyes egyedek elérik a 136 cm-t is."
+            }
+          },
+          {
+            "key": "sport",
+            "label": {
+              "en": "Sport heritage",
+              "hu": "Sporttörténeti szerep"
+            },
+            "value": {
+              "en": "The traditional game Sagol Kangjei, played on this pony, is a direct ancestor of modern polo.",
+              "hu": "A pónin játszott hagyományos Sagol Kangjei játék a modern póló közvetlen elődje."
+            }
+          },
+          {
+            "key": "conservation",
+            "label": {
+              "en": "Conservation effort",
+              "hu": "Védelmi program"
+            },
+            "value": {
+              "en": "The Manipuri Pony Conservation and Development Policy (2016) set aside grazing land to protect the endangered breed.",
+              "hu": "A Manipuri Pony Conservation and Development Policy (2016) legelőterületet jelölt ki a veszélyeztetett fajta védelmére."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/manipuri-pony.jpg",
+          "alt": {
+            "en": "A Manipuri Pony",
+            "hu": "Egy Manipuri póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Unknown authorUnknown author",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Manipur_Pony.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Manipur_Pony.jpg",
+            "originalFilename": "Manipur Pony.jpg",
+            "license": {
+              "id": "PD",
+              "name": "Public Domain"
+            },
+            "modifications": [
+              "Converted to a delivery JPEG copy; no resizing was needed as the original was already at or below 1280 pixels."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "downtoearth-manipuri-pony",
+            "label": "Down To Earth (Centre for Science and Environment) — Meitei Sagol: Manipur's conservation policy",
+            "url": "https://www.downtoearth.org.in/wildlife-biodiversity/meitei-sagol-manipur-takes-host-of-decisions-to-save-its-fabled-equines-from-extinction-96227",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.sport",
+              "facts.conservation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "basotho-pony",
+        "name": {
+          "display": {
+            "en": "Basotho Pony",
+            "hu": "Basotho póni"
+          }
+        },
+        "summary": {
+          "en": "A sure-footed mountain pony from Lesotho, bred for stamina on steep, rocky terrain.",
+          "hu": "Biztos léptű hegyi póni Lesothóból, amelyet meredek, sziklás terepen való kitartásra tenyésztettek."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Lesotho, developed from Cape Horse stock brought by Dutch settlers from around 1825.",
+              "hu": "Lesotho; a hollandus telepesek által mintegy 1825-től odahozott fokföldi lovakból alakult ki."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
+            },
+            "value": {
+              "en": "Stands no more than about 147 cm at the withers.",
+              "hu": "Marmagassága nem haladja meg a mintegy 147 cm-t."
+            }
+          },
+          {
+            "key": "terrain",
+            "label": {
+              "en": "Suited terrain",
+              "hu": "Alkalmas terep"
+            },
+            "value": {
+              "en": "Bred for endurance and sure footing in Lesotho's mountainous, high-altitude terrain.",
+              "hu": "Kitartásra és biztos lépésre tenyésztették Lesotho hegyvidéki, magas fekvésű terepén."
+            }
+          },
+          {
+            "key": "status",
+            "label": {
+              "en": "Conservation status",
+              "hu": "Védettségi helyzet"
+            },
+            "value": {
+              "en": "Listed by the FAO as a threatened breed.",
+              "hu": "Az FAO veszélyeztetett fajtaként tartja nyilván."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/basotho-pony.jpg",
+          "alt": {
+            "en": "A Basotho Pony",
+            "hu": "Egy Basotho póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Nakengtsapoho",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Pere_ya_Basotho.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Pere_ya_Basotho.jpg",
+            "originalFilename": "Pere ya Basotho.jpg",
+            "license": {
+              "id": "CC0-1.0",
+              "name": "Creative Commons Zero v1.0 Universal",
+              "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "okstate-basotho-pony",
+            "label": "Oklahoma State University — Breeds of Livestock: Basotho Pony",
+            "url": "https://breeds.okstate.edu/horses/basotho-pony.html",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.terrain",
+              "facts.status"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "skyros-pony",
+        "name": {
+          "display": {
+            "en": "Skyros Pony",
+            "hu": "Szkírosz-póni"
+          }
+        },
+        "summary": {
+          "en": "One of the world's rarest ponies, found only on the Greek island of Skyros.",
+          "hu": "A világ egyik legritkább pónija, kizárólag a görög Szkírosz szigetén él."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "The Greek island of Skyros, in the Aegean Sea.",
+              "hu": "A görög Szkírosz szigete, az Égei-tengeren."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height range",
+              "hu": "Marmagassági tartomány"
+            },
+            "value": {
+              "en": "Stands roughly 92–115 cm at the withers, among the smallest pony types in Europe.",
+              "hu": "Marmagassága körülbelül 92–115 cm, Európa legkisebb pónitípusai közé tartozik."
+            }
+          },
+          {
+            "key": "conservation",
+            "label": {
+              "en": "Conservation status",
+              "hu": "Védettségi helyzet"
+            },
+            "value": {
+              "en": "Critically endangered, with only around 200 animals remaining.",
+              "hu": "Kritikusan veszélyeztetett, mindössze mintegy 200 egyeddel."
+            }
+          },
+          {
+            "key": "heritage",
+            "label": {
+              "en": "Cultural heritage",
+              "hu": "Kulturális örökség"
+            },
+            "value": {
+              "en": "Long part of island life on Skyros, used for farm work, threshing and children's riding.",
+              "hu": "Régóta Szkírosz szigeti életének része; mezőgazdasági munkára, cséplésre és gyermekek lovagoltatására használták."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/skyros-pony.jpg",
+          "alt": {
+            "en": "A Skyros Pony",
+            "hu": "Egy Szkírosz-póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Andrew Frey-Lempicki",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:The_Skyros_pony.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/The_Skyros_pony.jpg",
+            "originalFilename": "The Skyros pony.jpg",
+            "license": {
+              "id": "CC-BY-SA-2.0",
+              "name": "Creative Commons Attribution-ShareAlike 2.0 Generic",
+              "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "skyrian-horses-org",
+            "label": "Skyrian Horses (Mouries Farm conservation project) — History and Info",
+            "url": "https://www.skyrian-horses.org/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.conservation",
+              "facts.heritage"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "misaki-pony",
+        "name": {
+          "display": {
+            "en": "Misaki Pony",
+            "hu": "Miszaki póni"
+          }
+        },
+        "summary": {
+          "en": "A feral Japanese pony living wild on Cape Toi, protected as a national natural monument since 1953.",
+          "hu": "Vadon élő japán póni a Toi-foknál; 1953 óta védett nemzeti természeti emlék."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Cape Toi, Kushima, Miyazaki Prefecture, on the Japanese island of Kyushu.",
+              "hu": "A Toi-fok, Kushima, Mijazaki prefektúra, a japán Kjúsú szigetén."
+            }
+          },
+          {
+            "key": "history",
+            "label": {
+              "en": "History",
+              "hu": "Történelem"
+            },
+            "value": {
+              "en": "Descended from horses released to breed freely by the Akizuki clan in 1697.",
+              "hu": "Az Akizuki klán által 1697-ben szabadon engedett, szabadtenyésztésbe került lovak leszármazottja."
+            }
+          },
+          {
+            "key": "status",
+            "label": {
+              "en": "Protection status",
+              "hu": "Védettségi státusz"
+            },
+            "value": {
+              "en": "Designated a Japanese National Natural Monument in 1953.",
+              "hu": "1953-ban Japán nemzeti természeti emlékévé nyilvánították."
+            }
+          },
+          {
+            "key": "population",
+            "label": {
+              "en": "Population",
+              "hu": "Állományméret"
+            },
+            "value": {
+              "en": "A feral population of roughly 90 to 110 animals lives unmanaged on the cape.",
+              "hu": "Mintegy 90–110 egyedből álló, kezeletlen vadon élő állomány él a fokon."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/misaki-pony.jpg",
+          "alt": {
+            "en": "A Misaki Pony",
+            "hu": "Egy Miszaki póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Koji Ishii",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Misaki_uma_May_2014_4862.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Misaki_uma_May_2014_4862.jpg",
+            "originalFilename": "Misaki uma May 2014 4862.jpg",
+            "license": {
+              "id": "CC-BY-2.0",
+              "name": "Creative Commons Attribution 2.0 Generic",
+              "url": "https://creativecommons.org/licenses/by/2.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "miyazaki-kanko-cape-toi",
+            "label": "Miyazaki Prefecture Official Tourism — Cape Toi",
+            "url": "https://www.kanko-miyazaki.jp/en/sightseeing/1002",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.history",
+              "facts.status",
+              "facts.population"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "noma-pony",
+        "name": {
+          "display": {
+            "en": "Noma Pony",
+            "hu": "Noma póni"
+          }
+        },
+        "summary": {
+          "en": "The smallest native Japanese horse breed, now critically endangered and kept mainly at a dedicated conservation park.",
+          "hu": "Japán legkisebb őshonos lófajtája, ma már kritikusan veszélyeztetett, és főként egy erre a célra létrehozott parkban tartják."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Imabari, on the island of Shikoku, Ehime Prefecture, Japan.",
+              "hu": "Imabari, a Sikoku-szigeten, Ehime prefektúrában, Japánban."
+            }
+          },
+          {
+            "key": "history",
+            "label": {
+              "en": "History",
+              "hu": "Történelem"
+            },
+            "value": {
+              "en": "Bred from 1635 as war horses, later passed to local farmers for use as small pack and farm animals.",
+              "hu": "1635-től hadi lovaknak tenyésztették, később a helyi gazdák kapták meg csomagszállító és mezőgazdasági kis termetű állatként."
+            }
+          },
+          {
+            "key": "status",
+            "label": {
+              "en": "Conservation status",
+              "hu": "Védettségi helyzet"
+            },
+            "value": {
+              "en": "Designated a Natural Monument of Imabari City; classified as critically endangered.",
+              "hu": "Imabari város természeti emlékévé nyilvánították; kritikusan veszélyeztetettként tartják számon."
+            }
+          },
+          {
+            "key": "size",
+            "label": {
+              "en": "Size",
+              "hu": "Testméret"
+            },
+            "value": {
+              "en": "The smallest of Japan's native horse breeds.",
+              "hu": "Japán őshonos lófajtái közül a legkisebb."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/noma-pony.jpg",
+          "alt": {
+            "en": "A Noma Pony",
+            "hu": "Egy Noma póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "馬面長伊奈",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%AC%E9%83%BD%E7%AB%B6%E9%A6%AC%E5%A0%B4%E3%81%AE%E4%BA%A4%E6%B5%81%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%AB%E5%B8%AF%E5%90%8C%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%80%81%E9%87%8E%E9%96%93%E9%A6%AC%E3%81%AE%E3%80%8C%E3%83%9F%E3%82%AB%E3%83%B3%E3%80%8D.JPG",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/%E4%BA%AC%E9%83%BD%E7%AB%B6%E9%A6%AC%E5%A0%B4%E3%81%AE%E4%BA%A4%E6%B5%81%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%AB%E5%B8%AF%E5%90%8C%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%80%81%E9%87%8E%E9%96%93%E9%A6%AC%E3%81%AE%E3%80%8C%E3%83%9F%E3%82%AB%E3%83%B3%E3%80%8D.JPG",
+            "originalFilename": "京都競馬場の交流イベントに帯同している、野間馬の「ミカン」.JPG",
+            "license": {
+              "id": "CC-BY-SA-4.0",
+              "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+              "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "modifications": [
+              "Resized to a 1280-pixel delivery copy from the original."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "visit-ehime-noma",
+            "label": "Visit Ehime Japan (official prefecture tourism site) — Nomauma Highland",
+            "url": "https://www.visitehimejapan.com/en/things-to-do/spots/0013/",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.history",
+              "facts.status",
+              "facts.size"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "yonaguni-pony",
+        "name": {
+          "display": {
+            "en": "Yonaguni Pony",
+            "hu": "Jonaguni póni"
+          }
+        },
+        "summary": {
+          "en": "A small, sturdy pony native to Japan's westernmost island, once essential to farm work there.",
+          "hu": "Kicsi, edzett póni Japán legnyugatibb szigetéről, ahol egykor nélkülözhetetlen volt a mezőgazdasági munkában."
+        },
+        "facts": [
+          {
+            "key": "origin",
+            "label": {
+              "en": "Origin",
+              "hu": "Származás"
+            },
+            "value": {
+              "en": "Yonaguni Island, Okinawa Prefecture, Japan's westernmost inhabited island.",
+              "hu": "Jonaguni-sziget, Okinava prefektúra, Japán legnyugatibb lakott szigete."
+            }
+          },
+          {
+            "key": "height",
+            "label": {
+              "en": "Height range",
+              "hu": "Marmagassági tartomány"
+            },
+            "value": {
+              "en": "Stands about 110 to 120 cm at the withers.",
+              "hu": "Marmagassága körülbelül 110–120 cm."
+            }
+          },
+          {
+            "key": "hooves",
+            "label": {
+              "en": "Hoof strength",
+              "hu": "Patájuk erőssége"
+            },
+            "value": {
+              "en": "Naturally strong hooves mean the ponies traditionally go without horseshoes.",
+              "hu": "Természetesen erős patáik miatt hagyományosan patkó nélkül járnak."
+            }
+          },
+          {
+            "key": "status",
+            "label": {
+              "en": "Protection status",
+              "hu": "Védettségi státusz"
+            },
+            "value": {
+              "en": "Protected by Yonaguni Town; only around 100 remain today.",
+              "hu": "Jonaguni város védi őket; ma már csak mintegy 100 egyed maradt."
+            }
+          }
+        ],
+        "stats": {},
+        "image": {
+          "path": "assets/yonaguni-pony.jpg",
+          "alt": {
+            "en": "A Yonaguni Pony",
+            "hu": "Egy Jonaguni póni"
+          },
+          "attribution": {
+            "origin": "third-party",
+            "creator": "Paipateroma",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Yonaguniuma.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Yonaguniuma.jpg",
+            "originalFilename": "Yonaguniuma.jpg",
+            "license": {
+              "id": "CC-BY-SA-4.0",
+              "name": "Creative Commons Attribution-ShareAlike 4.0 International",
+              "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "modifications": [
+              "Converted to a delivery JPEG copy; no resizing was needed as the original was already at or below 1280 pixels."
+            ],
+            "accessedAt": "2026-09-11"
+          }
+        },
+        "sources": [
+          {
+            "id": "okinawa-churaumi-yonaguni-horse",
+            "label": "Ocean Expo Park (Okinawa Churaumi, official park) — Yonaguni Town Natural Monument: Yonaguni Horse",
+            "url": "https://oki-park.jp/sp/kaiyohaku/en/inst/79/6855",
+            "accessedAt": "2026-09-11",
+            "fields": [
+              "summary",
+              "facts.origin",
+              "facts.height",
+              "facts.hooves",
+              "facts.status"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
