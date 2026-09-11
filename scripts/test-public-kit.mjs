@@ -9,10 +9,28 @@ import { spawnSync } from 'node:child_process'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
 import { fileURLToPath } from 'node:url'
+import assert from 'node:assert/strict'
+import { validateCommunityPack } from './community-pack-validator.mjs'
 
 const kitRoot = fileURLToPath(new URL('..', import.meta.url))
 const temporaryRoot = mkdtempSync(join(tmpdir(), 'oh-play-packs-smoke-'))
 const fixtureDirectory = join(temporaryRoot, 'test-pack')
+
+const recognition = JSON.parse(readFileSync(join(kitRoot, 'examples/wild-animals-reference/pack.json'), 'utf8'))
+recognition.capabilities = ['recognition']
+recognition.content.world.stats = []
+for (const card of recognition.content.cards) {
+  card.stats = {}
+  for (const source of card.sources) source.fields = source.fields.filter((field) => !field.startsWith('stats.'))
+  card.sources = card.sources.filter((source) => source.fields.length > 0)
+}
+assert.equal(validateCommunityPack(recognition).valid, true)
+recognition.capabilities.push('battle')
+assert.ok(validateCommunityPack(recognition).issues.some((issue) => issue.code === 'BATTLE_STATS_REQUIRED'))
+const missingStat = JSON.parse(readFileSync(join(kitRoot, 'examples/wild-animals-reference/pack.json'), 'utf8'))
+missingStat.content.cards[0].stats = {}
+assert.ok(validateCommunityPack(missingStat).issues.some((issue) => issue.code === 'MISSING_STAT_VALUE'))
+console.log('PASS: Recognition-only empty stats and strict Battle compatibility.')
 
 try {
   cpSync(join(kitRoot, 'examples', 'template'), fixtureDirectory, { recursive: true })

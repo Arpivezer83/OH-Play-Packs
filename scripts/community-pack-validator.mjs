@@ -348,6 +348,9 @@ function validateGameCardsWorldPack(pack, issues) {
   }
 
   const capabilities = Array.isArray(pack.capabilities) ? pack.capabilities : []
+  if (capabilities.includes('battle') && stats.length === 0) {
+    issues.push(issue('BATTLE_STATS_REQUIRED', 'content.world.stats', 'Battle requires at least one stat definition.'))
+  }
   const supportedCapabilities = COMMUNITY_PACK_SCHEMA.properties.capabilities.items.enum
   capabilities.forEach((capability, index) => {
     if (!supportedCapabilities.includes(capability)) {
