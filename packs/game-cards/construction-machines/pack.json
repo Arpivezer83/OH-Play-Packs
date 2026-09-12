@@ -2,7 +2,7 @@
   "id": "construction-machines",
   "schemaVersion": 1,
   "packType": "game-cards-world",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "title": { "en": "Construction Machines", "hu": "Építőgépek" },
   "description": {
     "en": "Thirty-two real machines for noticing how digging, loading, grading, hauling and compaction equipment differ.",
@@ -33,7 +33,7 @@
       "cardOrder": [
         "cat-320c", "volvo-ew160b", "cat-d6n", "cat-950h", "volvo-a25d", "cat-120h", "cat-428e", "bobcat-s650",
         "bomag-bw213-dh", "jcb-531-70", "cat-325c", "cat-m318d", "komatsu-d65-pxi", "volvo-l120e", "volvo-a30d", "cat-140h",
-        "jcb-3cx", "cat-246d", "cat-cs56", "jcb-540-170", "cat-330d-l", "volvo-ec210b", "cat-d8h", "volvo-l180e",
+        "jcb-3cx", "cat-242d", "cat-cs56", "jcb-540-170", "cat-330d-l", "volvo-ec210b", "cat-d8h", "volvo-l180e",
         "volvo-g930", "hamm-3412", "volvo-ec240b-lc", "hitachi-zx350-lc", "volvo-l220e", "volvo-ec290b", "cat-336d-ln", "cat-631g"
       ],
       "stats": [
@@ -218,13 +218,13 @@
         "sources": [{ "id": "jcb-3cx-spec", "label": "JCB 3CX backhoe loader specifications", "url": "https://www.jcb.com/en-SG/products/machines/backhoe-loaders/3cx/", "accessedAt": "2026-09-10", "fields": ["name.secondaryName", "summary", "facts.machine-type", "stats.published-machine-mass-kg", "stats.engine-power-kw", "stats.max-travel-speed-kph"], "note": "55 kW manual-control configuration. JCB publishes several 3CX versions; this card does not average their power, weight or top-speed figures." }]
       },
       {
-        "id": "cat-246d",
-        "name": { "display": { "en": "246D skid-steer loader", "hu": "246D csúszókormányzású rakodó" }, "secondaryName": "Caterpillar 246D" },
+        "id": "cat-242d",
+        "name": { "display": { "en": "242D skid-steer loader", "hu": "242D csúszókormányzású rakodó" }, "secondaryName": "Caterpillar 242D" },
         "summary": { "en": "A compact skid-steer loader can turn in a very small space to load, dig and carry material.", "hu": "A kompakt csúszókormányzású rakodó nagyon kis helyen is megfordul, így rakodhat, áshat és anyagot vihet." },
         "facts": [{ "key": "machine-type", "label": { "en": "Machine type", "hu": "Géptípus" }, "value": { "en": "Skid-steer loader", "hu": "Csúszókormányzású rakodó" } }],
-        "stats": { "published-machine-mass-kg": { "value": 3367.5 }, "engine-power-kw": { "value": 55 }, "max-travel-speed-kph": { "value": 12.5 } },
-        "image": { "path": "assets/cat-246d.jpg", "alt": { "en": "A Caterpillar 246D skid-steer loader", "hu": "Egy Caterpillar 246D csúszókormányzású rakodó" }, "attribution": { "origin": "third-party", "creator": "DestinationFearFan", "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Caterpillar_246D.jpg", "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Caterpillar_246D.jpg", "originalFilename": "Caterpillar 246D.jpg", "license": { "id": "CC-BY-SA-4.0", "name": "Creative Commons Attribution-ShareAlike 4.0 International", "url": "https://creativecommons.org/licenses/by-sa/4.0" }, "modifications": ["Resized to a 1280-pixel delivery copy from the original."], "accessedAt": "2026-09-10" } },
-        "sources": [{ "id": "cat-246d-spec", "label": "Caterpillar 246D skid-steer loader specification sheet", "url": "https://www.ite-cat.co.il/sites/cat/UserContent/files/226-246D.pdf", "accessedAt": "2026-09-10", "fields": ["name.secondaryName", "summary", "facts.machine-type", "stats.published-machine-mass-kg", "stats.engine-power-kw", "stats.max-travel-speed-kph"], "note": "One-speed, OROPS, standard-bucket configuration. The cited operating mass includes the stated 75 kg operator and full fluids." }]
+        "stats": { "published-machine-mass-kg": { "value": 3166 }, "engine-power-kw": { "value": 54.6 }, "max-travel-speed-kph": { "value": 12.1 } },
+        "image": { "path": "assets/cat-242d.jpg", "alt": { "en": "A Caterpillar 242D skid-steer loader", "hu": "Egy Caterpillar 242D csúszókormányzású rakodó" }, "attribution": { "origin": "third-party", "creator": "Daderot", "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:CAT_242D_-_Arlington,_MA.jpg", "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/CAT_242D_-_Arlington%2C_MA.jpg", "originalFilename": "CAT 242D - Arlington, MA.jpg", "license": { "id": "CC0-1.0", "name": "Creative Commons Zero v1.0 Universal", "url": "https://creativecommons.org/publicdomain/zero/1.0/" }, "modifications": ["Resized to a 1280-pixel delivery copy from the original."], "accessedAt": "2026-09-12" } },
+        "sources": [{ "id": "cat-242d-specalog", "label": "Caterpillar Small Specalog for Cat 242D Skid Steer Loader (AEHQ7006-03)", "url": "https://s7d2.scene7.com/is/content/Caterpillar/C10886511", "accessedAt": "2026-09-12", "fields": ["name.secondaryName", "summary", "facts.machine-type", "stats.published-machine-mass-kg", "stats.engine-power-kw", "stats.max-travel-speed-kph"], "note": "One-speed, OROPS, standard-bucket (1676 mm/66 in dirt bucket) configuration with a 75 kg (165 lb) operator, all fluids, standard flow hydraulics, mechanical suspension seat, no optional counterweights and manual quick coupler — Caterpillar's stated base configuration. The two-speed option raises travel speed to 18.5 km/h (11.5 mph); high-flow hydraulics are a separate option not reflected here." }]
       },
       {
         "id": "cat-cs56",
