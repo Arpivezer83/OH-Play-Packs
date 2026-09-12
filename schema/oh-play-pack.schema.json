@@ -219,7 +219,6 @@
         },
         "stats": {
           "type": "array",
-          "minItems": 1,
           "items": { "$ref": "#/$defs/statDefinition" }
         }
       }
@@ -243,7 +242,6 @@
         "facts": { "type": "array", "items": { "$ref": "#/$defs/fact" } },
         "stats": {
           "type": "object",
-          "minProperties": 1,
           "propertyNames": { "$ref": "#/$defs/stableId" },
           "additionalProperties": { "$ref": "#/$defs/statValue" }
         },
