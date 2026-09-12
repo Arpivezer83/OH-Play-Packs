@@ -80,8 +80,8 @@
         "manipuri-pony",
         "basotho-pony",
         "skyros-pony",
-        "misaki-pony",
-        "noma-pony",
+        "welsh-pony-cob-type",
+        "landais-pony",
         "yonaguni-pony"
       ],
       "stats": []
@@ -224,7 +224,7 @@
         "image": {
           "path": "assets/american-shetland-pony.jpg",
           "alt": {
-            "en": "A American Shetland Pony",
+            "en": "An American Shetland Pony",
             "hu": "Egy Amerikai shetlandi póni"
           },
           "attribution": {
@@ -740,7 +740,7 @@
         "image": {
           "path": "assets/eriskay-pony.jpg",
           "alt": {
-            "en": "A Eriskay Pony",
+            "en": "An Eriskay Pony",
             "hu": "Egy Eriskay póni"
           },
           "attribution": {
@@ -997,7 +997,7 @@
         "image": {
           "path": "assets/exmoor-pony.jpg",
           "alt": {
-            "en": "A Exmoor Pony",
+            "en": "An Exmoor Pony",
             "hu": "Egy Exmoor póni"
           },
           "attribution": {
@@ -1535,7 +1535,7 @@
         "image": {
           "path": "assets/asturcon.jpg",
           "alt": {
-            "en": "A Asturcón",
+            "en": "An Asturcón",
             "hu": "Egy Asturcón"
           },
           "attribution": {
@@ -2319,7 +2319,7 @@
         "image": {
           "path": "assets/australian-riding-pony.jpg",
           "alt": {
-            "en": "A Australian Riding Pony",
+            "en": "An Australian Riding Pony",
             "hu": "Egy Ausztrál lovaspóni"
           },
           "attribution": {
@@ -2746,16 +2746,16 @@
         ]
       },
       {
-        "id": "misaki-pony",
+        "id": "welsh-pony-cob-type",
         "name": {
           "display": {
-            "en": "Misaki Pony",
-            "hu": "Miszaki póni"
+            "en": "Welsh Pony of Cob Type (Section C)",
+            "hu": "Welsh póni, kob típus (C szekció)"
           }
         },
         "summary": {
-          "en": "A feral Japanese pony living wild on Cape Toi, protected as a national natural monument since 1953.",
-          "hu": "Vadon élő japán póni a Toi-foknál; 1953 óta védett nemzeti természeti emlék."
+          "en": "A stronger, more compact Welsh section than A and B, bred with cob blood but kept within pony height.",
+          "hu": "Az A és B szekciónál erősebb, zömökebb welsh típus, amelyet kob vérvonalakkal tenyésztettek, mégis pónimagasságban tartva."
         },
         "facts": [
           {
@@ -2765,57 +2765,57 @@
               "hu": "Származás"
             },
             "value": {
-              "en": "Cape Toi, Kushima, Miyazaki Prefecture, on the Japanese island of Kyushu.",
-              "hu": "A Toi-fok, Kushima, Mijazaki prefektúra, a japán Kjúsú szigetén."
+              "en": "Wales, developed by crossing Welsh Mountain Pony stock with Welsh Cob blood.",
+              "hu": "Wales; welsh hegyi pónik és welsh kob vérvonalak keresztezéséből alakították ki."
             }
           },
           {
-            "key": "history",
+            "key": "height",
             "label": {
-              "en": "History",
-              "hu": "Történelem"
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
             },
             "value": {
-              "en": "Descended from horses released to breed freely by the Akizuki clan in 1697.",
-              "hu": "Az Akizuki klán által 1697-ben szabadon engedett, szabadtenyésztésbe került lovak leszármazottja."
+              "en": "Welsh Pony and Cob Society Section C: no more than 137.2 cm (13.2 hands), with no lower limit.",
+              "hu": "Welsh Pony and Cob Society C szekció: legfeljebb 137,2 cm (13.2 hand), alsó határ nélkül."
             }
           },
           {
-            "key": "status",
+            "key": "build",
             "label": {
-              "en": "Protection status",
-              "hu": "Védettségi státusz"
+              "en": "Build",
+              "hu": "Testfelépítés"
             },
             "value": {
-              "en": "Designated a Japanese National Natural Monument in 1953.",
-              "hu": "1953-ban Japán nemzeti természeti emlékévé nyilvánították."
+              "en": "Stronger and more compact than Section B, with more bone and substance while keeping pony character.",
+              "hu": "A B szekciónál erősebb és zömökebb, több csontozattal és tömeggel, mégis megőrizve pónijellegét."
             }
           },
           {
-            "key": "population",
+            "key": "use",
             "label": {
-              "en": "Population",
-              "hu": "Állományméret"
+              "en": "Common use",
+              "hu": "Gyakori használat"
             },
             "value": {
-              "en": "A feral population of roughly 90 to 110 animals lives unmanaged on the cape.",
-              "hu": "Mintegy 90–110 egyedből álló, kezeletlen vadon élő állomány él a fokon."
+              "en": "A dual-purpose pony for both ridden and driven work.",
+              "hu": "Kettős célú póni, lovaglásra és fogathajtásra egyaránt alkalmas."
             }
           }
         ],
         "stats": {},
         "image": {
-          "path": "assets/misaki-pony.jpg",
+          "path": "assets/welsh-pony-cob-type.jpg",
           "alt": {
-            "en": "A Misaki Pony",
-            "hu": "Egy Miszaki póni"
+            "en": "A Welsh Pony of Cob Type (Section C)",
+            "hu": "Egy Welsh póni, kob típus (C szekció)"
           },
           "attribution": {
             "origin": "third-party",
-            "creator": "Koji Ishii",
-            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Misaki_uma_May_2014_4862.jpg",
-            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Misaki_uma_May_2014_4862.jpg",
-            "originalFilename": "Misaki uma May 2014 4862.jpg",
+            "creator": "pipilongstockings",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Blonde_Bombshell_EXPLORE_1st_March_-_Flickr_-_pipilongstockings.jpg",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Blonde_Bombshell_EXPLORE_1st_March_-_Flickr_-_pipilongstockings.jpg",
+            "originalFilename": "Blonde Bombshell EXPLORE 1st March - Flickr - pipilongstockings.jpg",
             "license": {
               "id": "CC-BY-2.0",
               "name": "Creative Commons Attribution 2.0 Generic",
@@ -2829,31 +2829,31 @@
         },
         "sources": [
           {
-            "id": "miyazaki-kanko-cape-toi",
-            "label": "Miyazaki Prefecture Official Tourism — Cape Toi",
-            "url": "https://www.kanko-miyazaki.jp/en/sightseeing/1002",
+            "id": "wpcs-section-c",
+            "label": "Welsh Pony and Cob Society — Welsh Pony (Cob Type)",
+            "url": "https://www.wpcs.uk.com/welsh-pony-cob-type",
             "accessedAt": "2026-09-11",
             "fields": [
               "summary",
               "facts.origin",
-              "facts.history",
-              "facts.status",
-              "facts.population"
+              "facts.height",
+              "facts.build",
+              "facts.use"
             ]
           }
         ]
       },
       {
-        "id": "noma-pony",
+        "id": "landais-pony",
         "name": {
           "display": {
-            "en": "Noma Pony",
-            "hu": "Noma póni"
+            "en": "Landais Pony",
+            "hu": "Landes-i póni"
           }
         },
         "summary": {
-          "en": "The smallest native Japanese horse breed, now critically endangered and kept mainly at a dedicated conservation park.",
-          "hu": "Japán legkisebb őshonos lófajtája, ma már kritikusan veszélyeztetett, és főként egy erre a célra létrehozott parkban tartják."
+          "en": "A critically endangered French pony from the Landes region, once used to move timber and now mainly ridden by children.",
+          "hu": "Kritikusan veszélyeztetett francia póni a Landes vidékéről; egykor fát szállítottak vele, ma inkább gyerekek lovagolják."
         },
         "facts": [
           {
@@ -2863,57 +2863,57 @@
               "hu": "Származás"
             },
             "value": {
-              "en": "Imabari, on the island of Shikoku, Ehime Prefecture, Japan.",
-              "hu": "Imabari, a Sikoku-szigeten, Ehime prefektúrában, Japánban."
+              "en": "The Landes department, in the Nouvelle-Aquitaine region of south-western France.",
+              "hu": "A Landes megye, Franciaország délnyugati részén, Nouvelle-Aquitaine régióban."
             }
           },
           {
-            "key": "history",
+            "key": "height",
             "label": {
-              "en": "History",
-              "hu": "Történelem"
+              "en": "Height standard",
+              "hu": "Marmagassági előírás"
             },
             "value": {
-              "en": "Bred from 1635 as war horses, later passed to local farmers for use as small pack and farm animals.",
-              "hu": "1635-től hadi lovaknak tenyésztették, később a helyi gazdák kapták meg csomagszállító és mezőgazdasági kis termetű állatként."
+              "en": "The official French breeding programme sets a range of about 118–148 cm.",
+              "hu": "A hivatalos francia tenyésztési program körülbelül 118–148 cm-es marmagasságot ír elő."
             }
           },
           {
-            "key": "status",
+            "key": "registry",
             "label": {
-              "en": "Conservation status",
-              "hu": "Védettségi helyzet"
+              "en": "Official recognition",
+              "hu": "Hivatalos elismerés"
             },
             "value": {
-              "en": "Designated a Natural Monument of Imabari City; classified as critically endangered.",
-              "hu": "Imabari város természeti emlékévé nyilvánították; kritikusan veszélyeztetettként tartják számon."
+              "en": "A stud-book was established in 1967 as part of a dedicated recovery effort.",
+              "hu": "Törzskönyvét 1967-ben hozták létre, egy célzott mentési program részeként."
             }
           },
           {
-            "key": "size",
+            "key": "use",
             "label": {
-              "en": "Size",
-              "hu": "Testméret"
+              "en": "Common use",
+              "hu": "Gyakori használat"
             },
             "value": {
-              "en": "The smallest of Japan's native horse breeds.",
-              "hu": "Japán őshonos lófajtái közül a legkisebb."
+              "en": "A children's riding pony, also used in harness and valued as a trotter.",
+              "hu": "Gyermekek lovaspónija, fogatban is használják, és jó ügetőként tartják számon."
             }
           }
         ],
         "stats": {},
         "image": {
-          "path": "assets/noma-pony.jpg",
+          "path": "assets/landais-pony.jpg",
           "alt": {
-            "en": "A Noma Pony",
-            "hu": "Egy Noma póni"
+            "en": "A Landais Pony",
+            "hu": "Egy Landes-i póni"
           },
           "attribution": {
             "origin": "third-party",
-            "creator": "馬面長伊奈",
-            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%AC%E9%83%BD%E7%AB%B6%E9%A6%AC%E5%A0%B4%E3%81%AE%E4%BA%A4%E6%B5%81%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%AB%E5%B8%AF%E5%90%8C%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%80%81%E9%87%8E%E9%96%93%E9%A6%AC%E3%81%AE%E3%80%8C%E3%83%9F%E3%82%AB%E3%83%B3%E3%80%8D.JPG",
-            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/%E4%BA%AC%E9%83%BD%E7%AB%B6%E9%A6%AC%E5%A0%B4%E3%81%AE%E4%BA%A4%E6%B5%81%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%AB%E5%B8%AF%E5%90%8C%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%80%81%E9%87%8E%E9%96%93%E9%A6%AC%E3%81%AE%E3%80%8C%E3%83%9F%E3%82%AB%E3%83%B3%E3%80%8D.JPG",
-            "originalFilename": "京都競馬場の交流イベントに帯同している、野間馬の「ミカン」.JPG",
+            "creator": "Eponimm",
+            "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Poney_landais01_SDC2014.JPG",
+            "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Poney_landais01_SDC2014.JPG",
+            "originalFilename": "Poney landais01 SDC2014.JPG",
             "license": {
               "id": "CC-BY-SA-4.0",
               "name": "Creative Commons Attribution-ShareAlike 4.0 International",
@@ -2927,16 +2927,16 @@
         },
         "sources": [
           {
-            "id": "visit-ehime-noma",
-            "label": "Visit Ehime Japan (official prefecture tourism site) — Nomauma Highland",
-            "url": "https://www.visitehimejapan.com/en/things-to-do/spots/0013/",
+            "id": "ifce-landais",
+            "label": "IFCE Équipédia — Landais",
+            "url": "https://equipedia.ifce.fr/elevage-et-entretien/race-et-robe/races-dequides-et-stud-book/landais",
             "accessedAt": "2026-09-11",
             "fields": [
               "summary",
               "facts.origin",
-              "facts.history",
-              "facts.status",
-              "facts.size"
+              "facts.height",
+              "facts.registry",
+              "facts.use"
             ]
           }
         ]
