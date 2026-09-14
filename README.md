@@ -182,11 +182,36 @@ real completion before it can validate. The Wild Animals reference is a valid
 ## What this repository supports today
 
 The automatically checked, standardized pack format is available for
-**Game Cards worlds only** (V1) — the structure described in this README and
+**Game Cards worlds only** — the structure described in this README and
 validated by the scripts below. We're genuinely open to other kinds of game
 ideas too; those just don't yet have a standardized technical format here, so
 send them through the idea route above (path A) instead, and a human will
 work out the right next step with you.
+
+## Game Cards schema versions
+
+Game Cards packs support two schema versions, `1` and `2`. **Version 1 is
+fully supported** and is what the template and reference pack use — most
+contributors should start there; schema v1 has no `metrics` fields at all.
+**Version 2 is additive**, not a replacement: it adds structured `metrics`
+support for neutral educational numbers (height, mass, speed, and similar).
+These stay three separate concepts:
+
+- **facts** — sourced descriptive text (habitat, origin, an interesting trait);
+- **Battle stats** — competitive numbers with a higher-wins/lower-wins
+  direction, used only by Battle mode;
+- **metrics** (schema v2 only) — neutral educational numbers with **no**
+  higher/lower-wins direction of their own; they exist to teach, not to win.
+
+Only choose schema `2` when your pack genuinely needs structured numeric
+metrics beyond what a fact or a Battle stat already covers — and once you do,
+a v2 `pack.json` **must** declare `world.metrics` and, on every card, its own
+`metrics` object; the schema requires both containers to exist. They may
+still be **empty**, and no card needs to populate every metric the world
+declares — only the container itself is required, not full coverage. Every
+metric value that *is* populated still needs its own traceable source,
+exactly like a fact or a stat — never invent or estimate a number to fill a
+field.
 
 ## The OH Play acceptance standard
 
@@ -236,6 +261,25 @@ ellenőrzés, amit a GitHub a PR megnyitásakor azonnal lefuttat.
 Az automatikusan ellenőrizhető pack-formátum egyelőre a Game Cards
 kártyacsomagokhoz érhető el. Más játékötleteket is örömmel várunk — ehhez az
 A utat használd, és együtt kitaláljuk a következő lépést.
+
+**Séma verziók (schema `1` és `2`).** A Game Cards packok kétféle sémát
+támogatnak. Az **1-es verzió továbbra is teljesen támogatott** — a sablon és a
+referenciacsomag is ezt használja, a legtöbb hozzájárulónak ezzel érdemes
+kezdenie, és nincs benne semmilyen `metrics` mező. A **2-es verzió additív**,
+nem lecserélés: strukturált `metrics` (mérőszám) támogatást ad hozzá semleges,
+oktató jellegű számokhoz (pl. magasság, testtömeg, sebesség). Ez három
+különálló fogalom marad: a **facts** (tények) forrásolt, leíró szöveg; a
+**Battle statok** versengő számok higher-wins/lower-wins iránnyal, kizárólag a
+Csata módhoz; a **metrics** (csak v2) pedig semleges, oktató számok,
+higher/lower-wins irány **nélkül** — ezek tanítanak, nem versenyeznek. Csak
+akkor válaszd a 2-es sémát, ha a packednek valóban szüksége van strukturált
+számadatra — és ha igen, a v2 `pack.json`-nak **kötelezően** deklarálnia kell
+a `world.metrics`-t és minden kártyán a saját `metrics` objektumát; a séma
+mindkét tárolót megköveteli. Ezek lehetnek **üresek**, és egyetlen kártyának
+sem kell a világ összes deklarált mérőszámát kitöltenie — csak maga a tároló
+kötelező, nem a teljes lefedettség. Minden ténylegesen kitöltött
+mérőszám-értéknek is kell saját, visszakereshető forrás, pontosan úgy, mint
+egy factnak vagy statnak — soha ne találj ki vagy becsülj egy számot.
 
 **Az OH Play elfogadási mércéje:** a `VALID` technikai eredmény, nem
 publikálási döntés. Minden beküldést ugyanaz a lista mér: nincs benne reklám

@@ -25,7 +25,7 @@ if (!inputDirectory) {
       process.exitCode = 1
     } else {
       console.log('✓ pack.json parsed')
-      console.log('✓ schema version 1 supported')
+      console.log(`✓ schema version ${result.summary.schemaVersion} supported`)
       console.log(`✓ ${result.summary.cards} cards`)
       console.log(`✓ ${result.summary.assets} local assets present`)
       console.log('✓ provenance complete')

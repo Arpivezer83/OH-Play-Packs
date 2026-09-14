@@ -29,15 +29,40 @@ the moment you open a pull request.
 
 ## Before you start
 
-The V1 supported external type is a **Game Cards world**. A real pack needs:
+The currently supported external pack type is a **Game Cards world**. A real pack needs:
 
 - English and Hungarian (`en` and `hu`) for every required localized field;
-- traceable sources for factual fields and comparison stats;
+- traceable sources for factual fields, comparison stats, and any metrics;
 - an explicit licence for the contributor's pack content; and
 - per-asset creator, provenance, and licence metadata where applicable.
 
 Submit only content and assets you have the right to share. A pack-level
 licence never replaces an individual third-party asset's licence.
+
+### Schema version: `1` (default) or `2` (adds metrics)
+
+Every pack declares `"schemaVersion": 1` or `"schemaVersion": 2`. **Version 1
+remains fully supported** and is what the template and reference pack use —
+stick with it unless your pack genuinely needs the following, and it has no
+`metrics` fields at all. **Version 2 is additive**: it adds structured
+`metrics` support for neutral educational numbers (height, mass, speed, and
+similar), kept as a third concept alongside the existing ones:
+
+- **facts** — sourced descriptive text;
+- **Battle stats** — competitive numbers with a higher-wins/lower-wins
+  direction, used only by Battle mode;
+- **metrics** (schema v2 only) — neutral educational numbers with **no**
+  higher/lower-wins direction of their own.
+
+In schema v2, `world.metrics` and every card's own `metrics` object are
+**required containers** — the schema will not validate a v2 pack that omits
+either. They may be **empty**, and a card never needs to populate every
+metric the world declares (partial coverage is fine); only the container
+itself is required, not full coverage. Do not use `metrics` to sneak in
+Battle behaviour, and do not duplicate a Battle stat's value into `metrics`
+(or the reverse). Every metric value that *is* populated still needs its own
+traceable source, exactly like a fact or a stat — never invent or estimate a
+number to fill a field.
 
 Your original work remains yours; OH Play does not take ownership. We prefer
 `CC-BY-NC-SA-4.0` for original pack content so it can be played and shared
