@@ -862,30 +862,9 @@
               "facts.coat",
               "facts.studbook"
             ]
-          },
-          {
-            "id": "eriskay-pony-society",
-            "label": "The Eriskay Pony Society — The Eriskay Pony",
-            "url": "https://eriskaypony.org/the-eriskay-pony/",
-            "accessedAt": "2026-09-15",
-            "fields": [
-              "metrics.breed-standard-max-height"
-            ]
           }
         ],
-        "metrics": {
-          "breed-standard-max-height": {
-            "value": 138,
-            "reportedRange": {
-              "min": 124,
-              "max": 138
-            },
-            "basis": {
-              "en": "The Eriskay Pony Society states the breed stands 124–138 cm (12.0–13.2 hands) high; the metric value uses the upper end of this official range.",
-              "hu": "Az Eriskay Pony Society szerint a fajta marmagassága 124–138 cm (12,0–13,2 hands); a mérőszám e hivatalos tartomány felső határát használja."
-            }
-          }
-        }
+        "metrics": {}
       },
       {
         "id": "welsh-pony",
@@ -1706,8 +1685,8 @@
               "hu": "Marmagassági előírás"
             },
             "value": {
-              "en": "Spain's official morphological standard cites an average height at withers of about 130 cm for both sexes; the breed standard states it must never exceed 1.47 m.",
-              "hu": "Spanyolország hivatalos morfológiai standardja mindkét nem esetén kb. 130 cm-es átlagos marmagasságot ad meg; a fajtastandard szerint a marmagasság nem haladhatja meg az 1,47 m-t."
+              "en": "MAPA lists a height at the withers of 130 cm for both sexes and states that height at the withers must never exceed 1.47 m.",
+              "hu": "A MAPA mindkét nemnél 130 cm-es marmagasságot tüntet fel, és kimondja, hogy a marmagasság nem haladhatja meg az 1,47 m-t."
             }
           },
           {
@@ -1785,8 +1764,8 @@
           "breed-standard-max-height": {
             "value": 147,
             "basis": {
-              "en": "Spain's official morphological standard (MAPA) cites an average height at withers of about 130 cm for both sexes, and states the height must never exceed 1.47 m. 130 cm is a cited average, not the lower bound of a range, so only the 1.47 m absolute ceiling is used as the metric value.",
-              "hu": "Spanyolország hivatalos morfológiai standardja (MAPA) mindkét nem esetén kb. 130 cm-es átlagos marmagasságot ad meg, és kimondja, hogy a marmagasság nem haladhatja meg az 1,47 m-t. A 130 cm egy idézett átlag, nem egy tartomány alsó határa, ezért a mérőszám csak az 1,47 m-es abszolút felső határt használja."
+              "en": "MAPA lists 130 cm for both sexes and states that height at the withers must never exceed 1.47 m. The metric uses only this explicit upper limit (147 cm).",
+              "hu": "A MAPA mindkét nemnél 130 cm-t tüntet fel, és kimondja, hogy a marmagasság nem haladhatja meg az 1,47 m-t. A mérőszám kizárólag ezt a kifejezett felső határt (147 cm) használja."
             }
           }
         }
@@ -1982,8 +1961,8 @@
         },
         "sources": [
           {
-            "id": "faroe-pony-society",
-            "label": "Faroese Pony Society — Grani/Føroysk Ross breed information",
+            "id": "wikipedia-faroe-pony",
+            "label": "Wikipedia — Faroe pony (secondary source)",
             "url": "https://en.wikipedia.org/wiki/Faroe_pony",
             "accessedAt": "2026-09-11",
             "fields": [
@@ -2247,8 +2226,8 @@
               "hu": "Marmagassági tartomány"
             },
             "value": {
-              "en": "The breed standard allows a range of about 11.0 to 14.2 hands (roughly 112–145 cm).",
-              "hu": "A fajtaleírás körülbelül 11.0–14.2 hand (nagyjából 112–145 cm) tartományt enged meg."
+              "en": "The breed standard allows a range of about 11.0 to 14.2 hands (roughly 112–147 cm).",
+              "hu": "A fajtaleírás körülbelül 11.0–14.2 hand (nagyjából 112–147 cm) tartományt enged meg."
             }
           },
           {
@@ -2471,8 +2450,8 @@
               "hu": "Marmagassági tartomány"
             },
             "value": {
-              "en": "The Hackney Horse Society's standard places the pony type at roughly 12.2 to 14 hands.",
-              "hu": "A Hackney Horse Society fajtaleírása a póni típust körülbelül 12.2–14 hand tartományba sorolja."
+              "en": "The Hackney Horse Society describes a height at maturity of 12.2 to 14 hands as characteristic of the pony breed.",
+              "hu": "A Hackney Horse Society a pónifajtára jellemzőként írja le a 12.2–14 hands felnőttkori marmagasságot."
             }
           },
           {
@@ -2533,7 +2512,15 @@
               "facts.origin",
               "facts.height",
               "facts.gait",
-              "facts.use",
+              "facts.use"
+            ]
+          },
+          {
+            "id": "hackney-registration-rules",
+            "label": "Hackney Horse Society — Rules of Registration (section 2b)",
+            "url": "https://hackney-horse.org.uk/rules-of-registration/",
+            "accessedAt": "2026-09-15",
+            "fields": [
               "metrics.breed-standard-max-height"
             ]
           }
@@ -2541,13 +2528,9 @@
         "metrics": {
           "breed-standard-max-height": {
             "value": 142.2,
-            "reportedRange": {
-              "min": 127.0,
-              "max": 142.2
-            },
             "basis": {
-              "en": "The Hackney Horse Society breed standard states 12.2 to 14 hands for the pony type; the metric value converts the upper bound (14 hands = 14 × 10.16 cm = 142.24 cm, rounded to 142.2 cm).",
-              "hu": "A Hackney Horse Society fajtastandardja a pony típusra 12,2–14 hands értéket ad meg; a mérőszám a felső határ átváltása (14 hands = 14 × 10,16 cm = 142,24 cm, 142,2 cm-re kerekítve)."
+              "en": "The Hackney Horse Society confines Hackney Pony registration to 14 hands and under. The metric converts this registration maximum (14 hands × 10.16 cm/hand = 142.24 cm, rounded to 142.2 cm).",
+              "hu": "A Hackney Horse Society legfeljebb 14 hands marmagasságú egyedeket jegyez be hackney póniként. A mérőszám ezt a törzskönyvi felső határt váltja át (14 hands × 10,16 cm = 142,24 cm, 142,2 cm-re kerekítve)."
             }
           }
         }
@@ -3293,8 +3276,8 @@
               "max": 148
             },
             "basis": {
-              "en": "The official breed society (Association Nationale du Poney Landais) and the 2023 IFCE-partnered selection programme both state an adult height range of 1.15–1.48 m unshod at 6 years old; this is the overall breed-standard range. Approved breeding stallions are further capped at 1.45 m by the breed society, but no distinction by studbook \"Livre\" was found in either official document consulted. The metric value uses the overall breed-standard upper bound (148 cm).",
-              "hu": "A hivatalos tenyésztőegyesület (Association Nationale du Poney Landais) és a 2023-as, IFCE-vel közös szelekciós program is 1,15–1,48 m-es felnőttkori (patkó nélküli, 6 éves kori) marmagassági tartományt ad meg; ez a teljes fajtastandard tartomány. A jóváhagyott tenyészménekre a tenyésztőegyesület további, 1,45 m-es korlátot szab, de a két vizsgált hivatalos dokumentumban nem találtunk különbséget törzskönyvi “Livre” szerint. A mérőszám a teljes fajtastandard felső határát használja (148 cm)."
+              "en": "The official Landais breed society standard gives an adult unshod height range of 1.15–1.48 m; the metric uses its upper bound (148 cm).",
+              "hu": "A hivatalos landais tenyésztőegyesületi fajtastandard 1,15–1,48 m-es, patkó nélküli felnőttkori marmagassági tartományt ad meg; a mérőszám ennek felső határát (148 cm) használja."
             }
           }
         }
