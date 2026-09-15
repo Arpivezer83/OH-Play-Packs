@@ -3,9 +3,28 @@
 Read this file first. Then read, in order:
 
 1. [`CONTRIBUTING.md`](CONTRIBUTING.md)
-2. [`schema/oh-play-pack.schema.json`](schema/oh-play-pack.schema.json)
+2. [`schema/oh-play-pack.schema.json`](schema/oh-play-pack.schema.json) — schema
+   version 1, the default. Only read
+   [`schema/oh-play-pack-v2.schema.json`](schema/oh-play-pack-v2.schema.json)
+   too if the pack genuinely needs structured numeric `metrics` (see below).
 3. [`examples/template/`](examples/template/)
 4. [`examples/wild-animals-reference/`](examples/wild-animals-reference/)
+
+Both the template and the reference pack use schema version 1 — that remains
+the right default for most packs, and has no `metrics` fields at all. Use
+`"schemaVersion": 2` only when the pack needs `metrics`: a THIRD concept,
+separate from `facts` (sourced descriptive text) and Battle `stats`
+(competitive values with a higher-wins/lower-wins direction). A metric is a
+neutral educational number — height, mass, speed, and similar — with no
+higher/lower-wins direction of its own. Never invent a metric value, never
+derive one from a fact, and never duplicate a Battle stat's value into
+`metrics`; every populated metric needs the same kind of traceable source as
+any fact or stat.
+
+Once you use schema v2, `world.metrics` and every card's own `metrics` are
+**required containers** in the schema — they may be empty, and a card never
+needs to populate every metric the world declares, but the container itself
+must be present on the world and on every card.
 
 This repository is self-contained. Do not look for or require the private OH
 Play application, React knowledge, Vite knowledge, routing knowledge, or
@@ -66,7 +85,8 @@ attention — strip that away and ask whether anything worth playing remains.
 
 1. Understand the human's pack idea and intended audience.
 2. Inspect the template and complete reference.
-3. Propose a useful card and stat structure in plain language.
+3. Propose a useful card structure in plain language — facts, Battle stats,
+   and (only if genuinely needed, and only with schema v2) metrics.
 4. Confirm that structure with available factual evidence.
 5. Create `packs/game-cards/<new-pack-id>/`.
 6. Add EN/HU content, local assets, attribution/licensing metadata, and
@@ -84,7 +104,8 @@ the validator pass.
 End every normal pack task with a short human-readable report containing:
 
 - pack ID and title;
-- cards created and stats used;
+- schema version used, and why (2 only if metrics were genuinely needed);
+- cards created, and facts/stats/metrics used;
 - sources used;
 - runtime assets and licence/attribution status;
 - validator result; and
