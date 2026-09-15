@@ -1,8 +1,8 @@
 {
   "id": "ponies",
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "packType": "game-cards-world",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": {
     "en": "Ponies",
     "hu": "Pónik"
@@ -84,7 +84,24 @@
         "landais-pony",
         "yonaguni-pony"
       ],
-      "stats": []
+      "stats": [],
+      "metrics": [
+        {
+          "key": "breed-standard-max-height",
+          "label": {
+            "en": "Breed-standard maximum height",
+            "hu": "Fajtastandard szerinti maximális marmagasság"
+          },
+          "unit": {
+            "en": "cm",
+            "hu": "cm"
+          },
+          "display": {
+            "kind": "number",
+            "maximumFractionDigits": 1
+          }
+        }
+      ]
     },
     "cards": [
       {
@@ -168,10 +185,20 @@
               "summary",
               "facts.height",
               "facts.coat",
-              "facts.colours"
+              "facts.colours",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 107,
+            "basis": {
+              "en": "Upper limit in the official breed standard, measured at the withers.",
+              "hu": "A hivatalos fajtastandard felső marmagassági határa."
+            }
+          }
+        }
       },
       {
         "id": "american-shetland-pony",
@@ -257,7 +284,8 @@
               "facts.types"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "welsh-mountain-pony",
@@ -340,10 +368,20 @@
               "summary",
               "facts.origin",
               "facts.height",
-              "facts.use"
+              "facts.use",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 121.9,
+            "basis": {
+              "en": "Upper limit in the WPCS Section A breed standard, measured at the withers.",
+              "hu": "A WPCS A szekciós hivatalos fajtastandard felső marmagassági határa."
+            }
+          }
+        }
       },
       {
         "id": "connemara-pony",
@@ -426,10 +464,24 @@
               "summary",
               "facts.origin",
               "facts.height",
-              "facts.build"
+              "facts.build",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 148,
+            "reportedRange": {
+              "min": 128,
+              "max": 148
+            },
+            "basis": {
+              "en": "The metric value uses the upper end of the official Connemara Pony Breeders' Society breed-standard height range.",
+              "hu": "A mérőszám értéke a hivatalos Connemara Pony Breeders' Society fajtastandard tartományának felső határa."
+            }
+          }
+        }
       },
       {
         "id": "dartmoor-pony",
@@ -512,10 +564,20 @@
               "summary",
               "facts.origin",
               "facts.height",
-              "facts.identity"
+              "facts.identity",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 127,
+            "basis": {
+              "en": "Upper limit in the Dartmoor Pony Society breed standard, measured at the withers.",
+              "hu": "A Dartmoor Pony Society hivatalos fajtastandardjának felső marmagassági határa."
+            }
+          }
+        }
       },
       {
         "id": "fell-pony",
@@ -598,10 +660,20 @@
               "summary",
               "facts.origin",
               "facts.height",
-              "facts.work"
+              "facts.work",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 142.2,
+            "basis": {
+              "en": "Upper limit in the Fell Pony Society breed standard (14 hands), measured at the withers.",
+              "hu": "A Fell Pony Society hivatalos fajtastandardjának felső marmagassági határa (14 hands)."
+            }
+          }
+        }
       },
       {
         "id": "dales-pony",
@@ -687,7 +759,8 @@
               "facts.society"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "eriskay-pony",
@@ -773,7 +846,8 @@
               "facts.studbook"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "welsh-pony",
@@ -856,10 +930,20 @@
               "summary",
               "facts.height",
               "facts.history",
-              "facts.type"
+              "facts.type",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 137.2,
+            "basis": {
+              "en": "Upper limit in the WPCS Section B breed standard, measured at the withers.",
+              "hu": "A WPCS B szekciós hivatalos fajtastandard felső marmagassági határa."
+            }
+          }
+        }
       },
       {
         "id": "new-forest-pony",
@@ -941,10 +1025,20 @@
               "summary",
               "facts.height",
               "facts.movement",
-              "facts.colour"
+              "facts.colour",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 148,
+            "basis": {
+              "en": "The upper height limit stated in the official New Forest Pony breed description; there is no lower limit.",
+              "hu": "A hivatalos New Forest pony fajtaleírás felső marmagassági határa; alsó határ nincs."
+            }
+          }
+        }
       },
       {
         "id": "exmoor-pony",
@@ -1030,7 +1124,8 @@
               "facts.movement"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "highland-pony",
@@ -1112,10 +1207,20 @@
               "summary",
               "facts.origin",
               "facts.height",
-              "facts.use"
+              "facts.use",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 148,
+            "basis": {
+              "en": "Upper limit in the Highland Pony Society breed description, measured at the withers.",
+              "hu": "A Highland Pony Society hivatalos fajtaleírásának felső marmagassági határa."
+            }
+          }
+        }
       },
       {
         "id": "kerry-bog-pony",
@@ -1198,10 +1303,24 @@
               "summary",
               "facts.origin",
               "facts.height",
-              "facts.work"
+              "facts.work",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 117,
+            "reportedRange": {
+              "min": 102,
+              "max": 117
+            },
+            "basis": {
+              "en": "The official Horse Sport Ireland standard differs by sex (mares 102–112 cm; stallions/geldings 102–117 cm); the metric value uses the breed's overall documented upper limit (stallions/geldings).",
+              "hu": "A hivatalos Horse Sport Ireland standard nemenként eltér (kánccák 102–112 cm; mének/heresek 102–117 cm); a mérőszám értéke a fajta teljes dokumentált felső határát használja (mének/heresek)."
+            }
+          }
+        }
       },
       {
         "id": "gotland-pony",
@@ -1286,8 +1405,30 @@
               "facts.height",
               "facts.heritage"
             ]
+          },
+          {
+            "id": "gotlandsruss-rasstandard",
+            "label": "Svenska Russavelsföreningen — Rasstandard (Gotlandsruss)",
+            "url": "https://www.gotlandsruss.se/gotlandsrusset/rasstandard/",
+            "accessedAt": "2026-09-15",
+            "fields": [
+              "metrics.breed-standard-max-height"
+            ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 130,
+            "reportedRange": {
+              "min": 115,
+              "max": 130
+            },
+            "basis": {
+              "en": "The metric value uses the upper end of the official Swedish stud-book registration range (three-year-olds are capped lower, at 128 cm; the recommended ideal is 123–126 cm).",
+              "hu": "A mérőszám értéke a hivatalos svéd törzskönyvi bejegyzési tartomány felső határa (a 3 éveseknl alacsonyabb, 128 cm-es határ érvényes; az ajánlott ideális magasság 123–126 cm)."
+            }
+          }
+        }
       },
       {
         "id": "german-riding-pony",
@@ -1372,8 +1513,30 @@
               "facts.height",
               "facts.use"
             ]
+          },
+          {
+            "id": "fn-deutsches-reitpony",
+            "label": "Deutsche Reiterliche Vereinigung (FN) — Deutsches Reitpony breed portrait",
+            "url": "https://www.pferdesport-deutschland.de/pferdezucht/ponys/ponyrassen/deutsches-reitpony",
+            "accessedAt": "2026-09-15",
+            "fields": [
+              "metrics.breed-standard-max-height"
+            ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 148,
+            "reportedRange": {
+              "min": 138,
+              "max": 148
+            },
+            "basis": {
+              "en": "The German national equestrian federation (FN) states the breeding-goal size as approximately 138–148 cm; the metric value uses the upper end, consistent with the breed's commonly cited 148 cm (149 cm shod) show/registration ceiling.",
+              "hu": "A német nemzeti lovasséport szövetség (FN) a tenyésztési célméretet kb. 138–148 cm-ben adja meg; a mérőszám a felső határt használja, összhangban a fajta általánosságban idézett 148 cm-es (patkóval 149 cm) bemutatási/regisztrációs korlátjával."
+            }
+          }
+        }
       },
       {
         "id": "pottok",
@@ -1471,7 +1634,8 @@
               "facts.lifestyle"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "asturcon",
@@ -1568,8 +1732,30 @@
               "facts.gait",
               "facts.registry"
             ]
+          },
+          {
+            "id": "mapa-asturcon-morfologicos",
+            "label": "Spain, Ministry of Agriculture (MAPA) — Asturcón official morphological data",
+            "url": "https://www.mapa.gob.es/es/ganaderia/temas/zootecnia/razas-ganaderas/razas/catalogo-razas/equino-caballar/asturcon/datos_morfologicos",
+            "accessedAt": "2026-09-15",
+            "fields": [
+              "metrics.breed-standard-max-height"
+            ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 147,
+            "reportedRange": {
+              "min": 130,
+              "max": 147
+            },
+            "basis": {
+              "en": "Spain's official morphological standard (MAPA) states the height at withers as never exceeding 1.47 m; the metric value uses this upper limit (average cited height for both sexes is 130 cm).",
+              "hu": "Spanyolország hivatalos morfológiai standardja (MAPA) szerint a marmagasság nem haladhatja meg az 1,47 m-t; a mérőszám ezt a felső határt használja (mindkét nemre idézett átlagmagasság 130 cm)."
+            }
+          }
+        }
       },
       {
         "id": "garrano",
@@ -1667,7 +1853,8 @@
               "facts.use"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "faroe-pony",
@@ -1765,7 +1952,8 @@
               "facts.use"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "pony-of-the-americas",
@@ -1862,8 +2050,30 @@
               "facts.coat",
               "facts.use"
             ]
+          },
+          {
+            "id": "poac-faq-height",
+            "label": "Pony of the Americas Club — FAQs (current registration height)",
+            "url": "https://www.poac.org/club/faqs",
+            "accessedAt": "2026-09-15",
+            "fields": [
+              "metrics.breed-standard-max-height"
+            ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 142.2,
+            "reportedRange": {
+              "min": 116.8,
+              "max": 142.2
+            },
+            "basis": {
+              "en": "The Pony of the Americas Club states the current registration range as 46 to 56 inches; the metric value converts the upper bound (56 in × 2.54 cm/in = 142.24 cm, rounded to 142.2 cm).",
+              "hu": "A Pony of the Americas Club a jelenlegi regisztrációs tartományt 46–56 hüvelykben adja meg; a mérőszám a felső határ átváltása (56 hüvelyk × 2,54 cm = 142,24 cm, 142,2 cm-re kerekítve)."
+            }
+          }
+        }
       },
       {
         "id": "chincoteague-pony",
@@ -1961,7 +2171,8 @@
               "facts.tradition"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "newfoundland-pony",
@@ -2056,10 +2267,24 @@
               "facts.origin",
               "facts.height",
               "facts.legal",
-              "facts.conservation"
+              "facts.conservation",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 147.3,
+            "reportedRange": {
+              "min": 111.8,
+              "max": 147.3
+            },
+            "basis": {
+              "en": "The Newfoundland Pony Society breed standard states 11.0 to 14.2 hands; the metric value converts the upper bound (14.2 hands = 14 × 10.16 cm + 2 × 2.54 cm = 147.32 cm, rounded to 147.3 cm).",
+              "hu": "A Newfoundland Pony Society fajtastandardja 11,0–14,2 hands értéket ad meg; a mérőszám a felső határ átváltása (14,2 hands = 14 × 10,16 cm + 2 × 2,54 cm = 147,32 cm, 147,3 cm-re kerekítve)."
+            }
+          }
+        }
       },
       {
         "id": "lac-la-croix-pony",
@@ -2157,7 +2382,8 @@
               "facts.conservation"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "hackney-pony",
@@ -2252,10 +2478,24 @@
               "facts.origin",
               "facts.height",
               "facts.gait",
-              "facts.use"
+              "facts.use",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 142.2,
+            "reportedRange": {
+              "min": 127.0,
+              "max": 142.2
+            },
+            "basis": {
+              "en": "The Hackney Horse Society breed standard states 12.2 to 14 hands for the pony type; the metric value converts the upper bound (14 hands = 14 × 10.16 cm = 142.24 cm, rounded to 142.2 cm).",
+              "hu": "A Hackney Horse Society fajtastandardja a pony típusra 12,2–14 hands értéket ad meg; a mérőszám a felső határ átváltása (14 hands = 14 × 10,16 cm = 142,24 cm, 142,2 cm-re kerekítve)."
+            }
+          }
+        }
       },
       {
         "id": "australian-riding-pony",
@@ -2352,8 +2592,26 @@
               "facts.movement",
               "facts.use"
             ]
+          },
+          {
+            "id": "rpsbs-show-pony-standard",
+            "label": "Riding Pony Stud Book Society Ltd (Australia) — Show Pony Standard of Excellence",
+            "url": "https://www.rpsbs.com.au/breed-standard/show-pony-standard-of-excellence/",
+            "accessedAt": "2026-09-15",
+            "fields": [
+              "metrics.breed-standard-max-height"
+            ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 147.3,
+            "basis": {
+              "en": "The Riding Pony Stud Book Society's Show Pony Standard of Excellence states the pony must not exceed 14.2 hands; the metric value converts this limit (14.2 hands = 147.32 cm, rounded to 147.3 cm).",
+              "hu": "A Riding Pony Stud Book Society Show Pony Standard of Excellence szabálya szerint a pony nem haladhatja meg a 14,2 hands értéket; a mérőszám ennek átváltása (14,2 hands = 147,32 cm, 147,3 cm-re kerekítve)."
+            }
+          }
+        }
       },
       {
         "id": "timor-pony",
@@ -2447,10 +2705,20 @@
               "facts.origin",
               "facts.height",
               "facts.build",
-              "facts.use"
+              "facts.use",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 127.0,
+            "basis": {
+              "en": "The Australian Pony Stud Book Society standard states the height shall not exceed 12.2 hands; the metric value converts this limit (12.2 hands = 12 × 10.16 cm + 2 × 2.54 cm = 127.0 cm).",
+              "hu": "Az Australian Pony Stud Book Society standardja szerint a magasság nem haladhatja meg a 12,2 hands értéket; a mérőszám ennek átváltása (12,2 hands = 12 × 10,16 cm + 2 × 2,54 cm = 127,0 cm)."
+            }
+          }
+        }
       },
       {
         "id": "manipuri-pony",
@@ -2547,7 +2815,8 @@
               "facts.conservation"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "basotho-pony",
@@ -2645,7 +2914,8 @@
               "facts.status"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "skyros-pony",
@@ -2743,7 +3013,8 @@
               "facts.heritage"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       },
       {
         "id": "welsh-pony-cob-type",
@@ -2838,10 +3109,20 @@
               "facts.origin",
               "facts.height",
               "facts.build",
-              "facts.use"
+              "facts.use",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 137.2,
+            "basis": {
+              "en": "Upper limit in the WPCS Section C breed standard, measured at the withers; there is no lower limit.",
+              "hu": "A WPCS C szekciós hivatalos fajtastandard felső marmagassági határa; alsó határ nincs."
+            }
+          }
+        }
       },
       {
         "id": "landais-pony",
@@ -2936,10 +3217,24 @@
               "facts.origin",
               "facts.height",
               "facts.registry",
-              "facts.use"
+              "facts.use",
+              "metrics.breed-standard-max-height"
             ]
           }
-        ]
+        ],
+        "metrics": {
+          "breed-standard-max-height": {
+            "value": 148,
+            "reportedRange": {
+              "min": 118,
+              "max": 148
+            },
+            "basis": {
+              "en": "The metric value uses the upper end of the official French stud-book breeding-programme height range.",
+              "hu": "A mérőszám értéke a hivatalos francia törzskönyvi tenyésztési programban megadott magassági tartomány felső határát használja."
+            }
+          }
+        }
       },
       {
         "id": "yonaguni-pony",
@@ -3037,7 +3332,8 @@
               "facts.status"
             ]
           }
-        ]
+        ],
+        "metrics": {}
       }
     ]
   }
